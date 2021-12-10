@@ -9,7 +9,11 @@ function App() {
       <header className='App-header'>
         <img src={spiral} className='App-logo' alt='logo' />
         <p>The Twilight Zone API</p>
-        <p>Not yet. Please check back in the future.</p>
+        <p>
+          You are about to enter another dimension. But not yet.
+          <br />
+          Please check back in the future.
+        </p>
       </header>
     </div>
   );
