@@ -1,0 +1,88 @@
+.Hero {
+  /* height: 550px; */
+  /* height: 100vh; */
+  height: 100%;
+  background-color: #0f4880;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.Hero .Overlay {
+  background-color: #0f4880;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.Hero .Content {
+  padding: 8em;
+  color: #ffffff;
+  z-index: 2;
+  /* text-align: center; */
+}
+
+.Hero .Content .MainTitleText {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.MainTitleText {
+  /* margin-top: 0; */
+  font-size: 48px !important;
+}
+
+.LeadText {
+  font-size: 18px;
+}
+
+.GetStarted {
+  text-decoration: none;
+  padding: 6px 12px;
+  background: transparent;
+  color: #ffffff;
+  width: 150px;
+  height: 35px;
+  border-style: solid;
+  border-radius: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.GetStarted:hover {
+  background-color: white;
+  transition-duration: 0.5s;
+  color: #0f4880;
+  outline: none;
+}
+
+.DocsContainer {
+  padding: 8em;
+  letter-spacing: 0.5px;
+}
+
+.DocumentationText {
+  font-size: 38px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
