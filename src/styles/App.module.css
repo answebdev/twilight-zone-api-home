@@ -38,12 +38,13 @@
 }
 
 .MainTitleText {
-  /* margin-top: 0; */
+  letter-spacing: 1.5px;
   font-size: 48px !important;
 }
 
 .LeadText {
   font-size: 18px;
+  /* margin-top: -20px; */
 }
 
 .GetStarted {
@@ -55,6 +56,7 @@
   height: 35px;
   border-style: solid;
   border-radius: 0;
+  /* border-radius: 0.5em; */
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -70,7 +72,7 @@
 
 .DocsContainer {
   /* padding: 8em; */
-  padding: 4em 8em;
+  padding: 4em 8em 2em 8em;
   letter-spacing: 0.5px;
 }
 
@@ -82,6 +84,7 @@
 
 .DocumentationText,
 .ResourcesText {
+  color: #141414;
   font-size: 38px;
 }
 
@@ -137,6 +140,10 @@ tr:nth-child(even) {
     padding: 4em;
   }
 
+  .DocsContainer {
+    padding-bottom: 2em;
+  }
+
   .ResourcesContainer {
     padding: 0 4em 4em 4em;
   }
@@ -149,6 +156,10 @@ tr:nth-child(even) {
     padding: 4em;
   }
 
+  .DocsContainer {
+    padding-bottom: 2em;
+  }
+
   .ResourcesContainer {
     padding: 0 4em 4em 4em;
   }
@@ -159,6 +170,10 @@ tr:nth-child(even) {
   .DocsContainer {
     /* background-color: green; */
     padding: 4em;
+  }
+
+  .DocsContainer {
+    padding-bottom: 2em;
   }
 
   .ResourcesContainer {

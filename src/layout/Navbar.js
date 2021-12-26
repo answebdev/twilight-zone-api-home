@@ -1,5 +1,6 @@
-// import classes from '../styles/Navbar.module.css';
 import '../App.css';
+
+// Adapted from: https://codepen.io/doytch/pen/Kyypba
 
 const Navbar = () => (
   <header className='navbar'>

@@ -42,7 +42,6 @@ function App() {
         <div>
           <div>
             <h1 className={classes.DocumentationText}>Documentation</h1>
-            <hr />
           </div>
           <div>
             <p>
@@ -297,7 +296,6 @@ function App() {
         <div>
           <div>
             <h1 className={classes.ResourcesText}>Resources</h1>
-            <hr />
           </div>
           <div>
             <p>The Twilight Zone API comes with a set of 6 common resources:</p>
