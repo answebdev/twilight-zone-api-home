@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 } */
+
+/* Navbar Styles */
+body {
+  margin: 0;
+}
+
+main {
+  margin: 16px;
+}
+
+.navbar {
+  /* Fix navbar to the top: */
+  overflow: hidden;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* border-bottom: 2px solid #0f4880; */
+  /* border-bottom: 2px solid #141414; */
+  border-bottom: 2px solid #545454;
+
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  /* color: #0f4880; */
+  color: #141414;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+.navbar-title {
+  font-weight: 700;
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+}
+
+.navbar-item {
+  padding: 16px 16px;
+  vertical-align: middle;
+}
+
+.nav-link {
+  color: #141414;
+  text-decoration: none;
+}
+
+/* Styles for Sticky (But Not Fixed) Footer */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* ========================= */
+
+/* Sticky (But Not Fixed) Footer,
+Source: https://chrisbracco.com/css-sticky-footer-effect/ */
+.footer {
+  /* position: absolute; */
+  right: 0;
+  /* bottom: -5px; */
+  bottom: 0;
+  left: 0;
+  padding: 18px;
+  background-color: #ffffff;
+  border-top: 2px solid #141414;
+  text-align: center;
+}
+/* ========================= */
+
+#footer-text {
+  color: #141414;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+/* End Footer */

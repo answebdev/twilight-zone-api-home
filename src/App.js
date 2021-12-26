@@ -1,9 +1,13 @@
 import React, { useEffect } from 'react';
 import classes from '../src/styles/App.module.css';
 
+import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
+
 import Prism from 'prismjs';
 //import 'prismjs/themes/prism-okaidia.css';
 import 'prismjs/themes/prism-twilight.css';
+// import 'prismjs/themes/prism-tomorrow.css';
 
 // Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
@@ -12,8 +16,10 @@ function App() {
   useEffect(() => {
     Prism.highlightAll();
   });
+
   return (
     <div>
+      <Navbar />
       <section>
         <div className={classes.Hero}>
           <div className={classes.Overlay}></div>
@@ -23,6 +29,7 @@ function App() {
               Make HTTP requests on the original Twilight Zone television
               series, seasons 1-5 (1959-1964).
             </p>
+            <br />
             <br />
             <a href='#docs' className={classes.GetStarted}>
               Get Started
@@ -178,7 +185,7 @@ function App() {
             </p>
             <br />
 
-            <p>Running this script will give you the following data.</p>
+            <p>Running this script will return the following data.</p>
             <p>
               <pre>
                 <code className='language-javascript'>
@@ -254,7 +261,7 @@ function App() {
             </p>
             <br />
 
-            <p>Running this script will give you the following data.</p>
+            <p>Running this script will return the following data.</p>
             <p>
               <pre>
                 <code className='language-javascript'>
@@ -348,6 +355,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

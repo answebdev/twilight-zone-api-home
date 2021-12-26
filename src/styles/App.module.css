@@ -2,8 +2,9 @@
   /* height: 550px; */
   /* height: 100vh; */
   height: 100%;
-  background-color: #0f4880;
+  /* background-color: #0f4880; */
   /* background-color: #141414; */
+  background-color: #545454;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -12,8 +13,9 @@
 }
 
 .Hero .Overlay {
-  background-color: #0f4880;
+  /* background-color: #0f4880; */
   /* background-color: #141414; */
+  background-color: #545454;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -58,9 +60,11 @@
 }
 
 .GetStarted:hover {
-  background-color: white;
+  background-color: #ffffff;
   transition-duration: 0.5s;
-  color: #0f4880;
+  /* color: #0f4880; */
+  /* color: #141414; */
+  color: #545454;
   outline: none;
 }
 
@@ -71,6 +75,7 @@
 }
 
 .ResourcesContainer {
+  /* padding: 4em 8em; */
   padding: 0 8em 4em 8em;
   letter-spacing: 0.5px;
 }
