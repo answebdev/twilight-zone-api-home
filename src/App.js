@@ -289,7 +289,7 @@ function App() {
       <section className={classes.ResourcesContainer} id='resources'>
         <div>
           <div>
-            <h1 className={classes.DocumentationText}>Resources</h1>
+            <h1 className={classes.ResourcesText}>Resources</h1>
             <hr />
           </div>
           <div>

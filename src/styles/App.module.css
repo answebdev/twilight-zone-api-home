@@ -75,7 +75,8 @@
   letter-spacing: 0.5px;
 }
 
-.DocumentationText {
+.DocumentationText,
+.ResourcesText {
   font-size: 38px;
 }
 
@@ -97,8 +98,9 @@ tr:nth-child(even) {
 }
 
 .ResourceTable {
-  border-collapse: collapse;
-  width: 30%;
+  /* border-collapse: collapse;
+  width: 30%; */
+  display: table;
 }
 
 .ResourceTr {
@@ -108,4 +110,53 @@ tr:nth-child(even) {
 .ResourceTd {
   border: none;
   background-color: #ffffff;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  /* .ResourcesContainer {
+    background-color: red;
+  } */
+}
+
+@media (max-width: 768px) {
+  /* .ResourcesContainer {
+    background-color: pink;
+  } */
+}
+
+@media (max-width: 750px) {
+  .Hero .Content,
+  .DocsContainer {
+    /* background-color: green; */
+    padding: 4em;
+  }
+
+  .ResourcesContainer {
+    padding: 0 4em 4em 4em;
+  }
+}
+
+@media (max-width: 376px) {
+  .Hero .Content,
+  .DocsContainer {
+    /* background-color: green; */
+    padding: 4em;
+  }
+
+  .ResourcesContainer {
+    padding: 0 4em 4em 4em;
+  }
+}
+
+@media (max-width: 280px) {
+  .Hero .Content,
+  .DocsContainer {
+    /* background-color: green; */
+    padding: 4em;
+  }
+
+  .ResourcesContainer {
+    padding: 0 4em 4em 4em;
+  }
 }
