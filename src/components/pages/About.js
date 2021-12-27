@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import classes from '../../styles/About.module.css';
 
 const About = () => {
+  useEffect(() => {
+    // Scroll to top of page:
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div className={classes.PageContainer}>
       <Helmet>
