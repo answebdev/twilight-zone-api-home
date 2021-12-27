@@ -1,0 +1,64 @@
+.Error {
+  text-align: center;
+}
+
+.AppLogo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    animation: spiral-spin infinite 5s linear;
+  }
+}
+
+.AppHeader {
+  background-color: #545454;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes spiral-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Safety {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  text-decoration: none;
+  padding: 6px 12px;
+  background: transparent;
+  color: #ffffff;
+  width: 150px;
+  height: 35px;
+  border-style: solid;
+  border-radius: 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.Safety:hover {
+  background-color: #ffffff;
+  transition-duration: 0.5s;
+  /* color: #0f4880; */
+  /* color: #141414; */
+  color: #545454;
+  outline: none;
+}

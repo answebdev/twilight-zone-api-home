@@ -1,0 +1,25 @@
+.PageContainer {
+  padding-top: 4em;
+}
+
+.MainSection {
+  padding: 2em 8em;
+}
+
+.Heading {
+  color: #141414;
+  font-size: 38px;
+}
+
+.Subheading {
+  color: #68906b;
+}
+
+.Link {
+  text-decoration: none;
+  color: #68906b;
+}
+
+.Link:hover {
+  text-decoration: underline;
+}

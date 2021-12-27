@@ -47,7 +47,15 @@
   /* margin-top: -20px; */
 }
 
+.Buttons {
+  display: flex;
+}
+
 .GetStarted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
   text-decoration: none;
   padding: 6px 12px;
   background: transparent;
@@ -86,6 +94,10 @@
 .ResourcesText {
   color: #141414;
   font-size: 38px;
+}
+
+.Subheading {
+  color: #68906b;
 }
 
 table {
@@ -134,6 +146,11 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 750px) {
+  /* Need for footer: */
+  .PageContainer {
+    padding-top: 4em;
+  }
+
   .Hero .Content,
   .DocsContainer {
     /* background-color: green; */
@@ -150,9 +167,13 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 376px) {
+  .PageContainer {
+    padding-top: 4em;
+  }
+
   .Hero .Content,
   .DocsContainer {
-    /* background-color: green; */
+    /* background-color: black; */
     padding: 4em;
   }
 
@@ -166,9 +187,13 @@ tr:nth-child(even) {
 }
 
 @media (max-width: 280px) {
+  .PageContainer {
+    padding-top: 4em;
+  }
+
   .Hero .Content,
   .DocsContainer {
-    /* background-color: green; */
+    /* background-color: red; */
     padding: 4em;
   }
 
