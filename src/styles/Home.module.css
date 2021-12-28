@@ -1,7 +1,7 @@
 .Hero {
   /* height: 550px; */
   /* height: 100vh; */
-  height: 100%;
+  height: 100vh;
   /* background-color: #0f4880; */
   /* background-color: #141414; */
   background-color: #545454;
@@ -78,16 +78,26 @@
   outline: none;
 }
 
-.DocsContainer {
+.SectionsContainer {
+  padding: 4em 8em 4em 8em;
+}
+
+.ResourcesContainer {
+  padding-top: 2em;
+}
+
+.DocsContainer,
+.ResourcesContainer {
   /* padding: 8em; */
-  padding: 4em 8em 2em 8em;
-  letter-spacing: 0.5px;
+  /* padding: 4em 8em 2em 8em;
+  letter-spacing: 0.5px; */
+  /* padding-top: 4em; */
 }
 
 .ResourcesContainer {
   /* padding: 4em 8em; */
-  padding: 0 8em 4em 8em;
-  letter-spacing: 0.5px;
+  /* padding: 0 8em 4em 8em;
+  letter-spacing: 0.5px; */
 }
 
 .DocumentationText,
@@ -102,6 +112,7 @@
 
 table {
   border-collapse: collapse;
+  /* border-spacing: 0; */
   width: 100%;
 }
 
@@ -115,6 +126,11 @@ th {
 tr:nth-child(even) {
   /* background-color: #dddddd; */
   background-color: #f4f4f4;
+}
+
+/* To make tables responsive: */
+.TableContainer {
+  overflow-x: auto;
 }
 
 .ResourceTable {
@@ -132,76 +148,130 @@ tr:nth-child(even) {
   background-color: #ffffff;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 1024px) {
-  /* .ResourcesContainer {
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  body {
     background-color: red;
-  } */
+  }
+  .Hero {
+    height: 100vh;
+  }
 }
 
-@media (max-width: 768px) {
-  /* .ResourcesContainer {
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  body {
+    background-color: yellow;
+  }
+
+  .Hero {
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  body {
+    background-color: steelblue;
+  }
+
+  .Hero {
+    height: 100vh;
+  }
+
+  .Hero .Content {
+    padding: 8em 4em 4em 4em;
+  }
+
+  .SectionsContainer {
+    padding: 4em;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  body {
+    background-color: brown;
+  }
+  .Hero {
+    height: 100vh;
+  }
+
+  .Hero .Content {
+    padding: 8em 4em 4em 4em;
+  }
+
+  .SectionsContainer {
+    padding: 4em;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  body {
+    background-color: salmon;
+  }
+
+  .Hero {
+    height: 100vh;
+  }
+
+  .Hero .Content {
+    padding: 6em 2em 2em 2em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  body {
+    background-color: black;
+  }
+
+  .Hero {
+    height: 100vh;
+  }
+
+  .Hero .Content {
+    padding: 6em 2em 2em 2em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  body {
+    background-color: burlywood;
+  }
+
+  .Hero {
+    height: 100vh;
+  }
+
+  .Hero .Content {
+    padding: 6em 2em 2em 2em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  body {
     background-color: pink;
-  } */
-}
-
-@media (max-width: 750px) {
-  /* Need for footer: */
-  .PageContainer {
-    padding-top: 4em;
   }
 
-  .Hero .Content,
-  .DocsContainer {
-    /* background-color: green; */
-    padding: 4em;
+  .Hero {
+    height: 100vh;
   }
 
-  .DocsContainer {
-    padding-bottom: 2em;
+  .Hero .Content {
+    padding: 6em 2em 2em 2em;
   }
 
-  .ResourcesContainer {
-    padding: 0 4em 4em 4em;
-  }
-}
-
-@media (max-width: 376px) {
-  .PageContainer {
-    padding-top: 4em;
-  }
-
-  .Hero .Content,
-  .DocsContainer {
-    /* background-color: black; */
-    padding: 4em;
-  }
-
-  .DocsContainer {
-    padding-bottom: 2em;
-  }
-
-  .ResourcesContainer {
-    padding: 0 4em 4em 4em;
-  }
-}
-
-@media (max-width: 280px) {
-  .PageContainer {
-    padding-top: 4em;
-  }
-
-  .Hero .Content,
-  .DocsContainer {
-    /* background-color: red; */
-    padding: 4em;
-  }
-
-  .DocsContainer {
-    padding-bottom: 2em;
-  }
-
-  .ResourcesContainer {
-    padding: 0 4em 4em 4em;
+  .SectionsContainer {
+    padding: 2em;
   }
 }

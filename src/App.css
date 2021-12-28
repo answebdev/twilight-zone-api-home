@@ -67,11 +67,11 @@ main {
   top: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 1px solid #dddddd;
+  /* End fix navbar styles */
   /* border-bottom: 2px solid #0f4880; */
   /* border-bottom: 2px solid #141414; */
   /* border-bottom: 1px solid #545454; */
-  border-bottom: 1px solid #dddddd;
-  /* End fix navbar styles */
 
   text-decoration: none;
   display: flex;
@@ -200,9 +200,9 @@ Source: https://chrisbracco.com/css-sticky-footer-effect/ */
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-  body {
+  /* body {
     background-color: steelblue;
-  }
+  } */
 
   .navbar {
     display: block;
@@ -226,9 +226,9 @@ Source: https://chrisbracco.com/css-sticky-footer-effect/ */
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
-  body {
+  /* body {
     background-color: brown;
-  }
+  } */
 
   .navbar {
     display: block;
@@ -330,9 +330,9 @@ Source: https://chrisbracco.com/css-sticky-footer-effect/ */
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
-  body {
+  /* body {
     background-color: pink;
-  }
+  } */
 
   .navbar {
     display: block;

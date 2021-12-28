@@ -16,6 +16,7 @@ const About = () => {
         <title>The Twilight Zone API | About</title>
       </Helmet>
       <Navbar />
+
       <section className={classes.MainSection}>
         <div>
           <div>
