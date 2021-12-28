@@ -35,6 +35,16 @@ const Home = ({ history }) => {
     }
   }, [history.location.hash]); // Fires when component mounts and every time hash changes
 
+  // handle back/fwd buttons
+  function hashHandler() {
+    const id = window.location.hash.slice(1); // remove leading '#'
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView();
+    }
+  }
+  window.addEventListener('hashchange', hashHandler, false);
+
   return (
     <div className={classes.PageContainer}>
       <Helmet>
