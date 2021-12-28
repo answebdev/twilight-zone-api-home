@@ -40,8 +40,22 @@ const Home = ({ history }) => {
   })();
 
   function scrollTo() {
-    const links = document.querySelectorAll('.scroll');
-    links.forEach((each) => (each.onclick = scrollAnchors));
+    var links = document.getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      if (
+        link.href &&
+        link.href.indexOf('#') !== -1 &&
+        // eslint-disable-next-line no-restricted-globals
+        (link.pathname === location.pathname ||
+          // eslint-disable-next-line no-restricted-globals
+          '/' + link.pathname === location.pathname) &&
+        // eslint-disable-next-line no-restricted-globals
+        link.search === location.search
+      ) {
+        link.onclick = scrollAnchors;
+      }
+    }
   }
 
   function scrollAnchors(e, respond = null) {
@@ -103,10 +117,10 @@ const Home = ({ history }) => {
                 Resources
               </a>
             </div>
-            <div className='scroll' id='docs2'></div>
+            <div id='docs2'></div>
           </div>
         </div>
-        <div className='scroll' id='docs'></div>
+        <div id='docs'></div>
       </section>
 
       <div className={classes.SectionsContainer}>
