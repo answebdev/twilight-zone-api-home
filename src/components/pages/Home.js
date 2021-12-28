@@ -13,7 +13,7 @@ import 'prismjs/themes/prism-twilight.css';
 // Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
-const Home = () => {
+const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
   useEffect(() => {
@@ -21,6 +21,19 @@ const Home = () => {
     // Scroll to top of page:
     window.scrollTo(0, 0);
   });
+
+  // Fix bug in Firefox and Safari -
+  // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
+  // (scroll down to see post)
+  useEffect(() => {
+    const hash = history.location.hash;
+    if (hash && document.getElementById(hash.substr(1))) {
+      // Check if there is a hash and if an element with that id exists
+      document
+        .getElementById(hash.substr(1))
+        .scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [history.location.hash]); // Fires when component mounts and every time hash changes
 
   return (
     <div className={classes.PageContainer}>
