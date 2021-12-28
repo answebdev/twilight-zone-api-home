@@ -67,12 +67,12 @@ main {
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid #dddddd;
   /* End fix navbar styles */
+
   /* border-bottom: 2px solid #0f4880; */
   /* border-bottom: 2px solid #141414; */
   /* border-bottom: 1px solid #545454; */
-
+  border-bottom: 1px solid #dddddd;
   text-decoration: none;
   display: flex;
   align-items: center;

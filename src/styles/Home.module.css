@@ -1,7 +1,7 @@
 .Hero {
   /* height: 550px; */
   /* height: 100vh; */
-  height: 100vh;
+  height: 100%;
   /* background-color: #0f4880; */
   /* background-color: #141414; */
   background-color: #545454;
@@ -86,20 +86,6 @@
   padding-top: 2em;
 }
 
-.DocsContainer,
-.ResourcesContainer {
-  /* padding: 8em; */
-  /* padding: 4em 8em 2em 8em;
-  letter-spacing: 0.5px; */
-  /* padding-top: 4em; */
-}
-
-.ResourcesContainer {
-  /* padding: 4em 8em; */
-  /* padding: 0 8em 4em 8em;
-  letter-spacing: 0.5px; */
-}
-
 .DocumentationText,
 .ResourcesText {
   color: #141414;
@@ -124,7 +110,6 @@ th {
 }
 
 tr:nth-child(even) {
-  /* background-color: #dddddd; */
   background-color: #f4f4f4;
 }
 
@@ -132,10 +117,9 @@ tr:nth-child(even) {
 .TableContainer {
   overflow-x: auto;
 }
+/* ========================= */
 
 .ResourceTable {
-  /* border-collapse: collapse;
-  width: 30%; */
   display: table;
 }
 
@@ -151,28 +135,29 @@ tr:nth-child(even) {
 /* ===== MEDIA QUERIES ===== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
-  body {
+  /* body {
     background-color: red;
-  }
-  .Hero {
+  } */
+
+  /* .Hero {
     height: 100vh;
-  }
+  } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
 
-  .Hero {
+  /* .Hero {
     height: 100vh;
-  }
+  } */
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-  body {
+  /* body {
     background-color: steelblue;
-  }
+  } */
 
   .Hero {
     height: 100vh;
@@ -188,9 +173,10 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
-  body {
+  /* body {
     background-color: brown;
-  }
+  } */
+
   .Hero {
     height: 100vh;
   }
@@ -205,9 +191,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 471px) and (max-width: 550px) {
-  body {
+  /* body {
     background-color: salmon;
-  }
+  } */
 
   .Hero {
     height: 100vh;
@@ -223,9 +209,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 431px) and (max-width: 470px) {
-  body {
+  /* body {
     background-color: black;
-  }
+  } */
 
   .Hero {
     height: 100vh;
@@ -241,9 +227,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
-  body {
+  /* body {
     background-color: burlywood;
-  }
+  } */
 
   .Hero {
     height: 100vh;
@@ -259,9 +245,9 @@ tr:nth-child(even) {
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
-  body {
+  /* body {
     background-color: pink;
-  }
+  } */
 
   .Hero {
     height: 100vh;

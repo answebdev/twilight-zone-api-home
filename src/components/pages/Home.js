@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import classes from '../../styles/Home.module.css';
+import useWindowDimensions from '../../utils/useWindowDimensions';
 
 import Prism from 'prismjs';
 //import 'prismjs/themes/prism-okaidia.css';
@@ -13,6 +14,8 @@ import 'prismjs/themes/prism-twilight.css';
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
 const Home = () => {
+  const { width } = useWindowDimensions();
+
   useEffect(() => {
     Prism.highlightAll();
     // Scroll to top of page:
@@ -38,25 +41,34 @@ const Home = () => {
             <br />
             <br />
             <div className={classes.Buttons}>
-              <a href='#docs' className={classes.GetStarted}>
+              {/* <a href='#docs' className={classes.GetStarted}>
+                Get Started
+              </a> */}
+              <a
+                href={width < 768 ? '#docs2' : '#docs'}
+                className={classes.GetStarted}
+              >
                 Get Started
               </a>
               <p></p>
-              <a href='#resources' className={classes.GetStarted}>
+              <a
+                href={width < 768 ? '#resources2' : '#resources'}
+                className={classes.GetStarted}
+              >
                 Resources
               </a>
             </div>
+            <div id='docs2'></div>
           </div>
         </div>
+        <div id='docs'></div>
       </section>
 
       <div className={classes.SectionsContainer}>
         <section className={classes.DocsContainer}>
           <div>
             <div>
-              <h1 id='docs' className={classes.DocumentationText}>
-                Documentation
-              </h1>
+              <h1 className={classes.DocumentationText}>Documentation</h1>
             </div>
             <div>
               <p>
@@ -307,18 +319,18 @@ const Home = () => {
 }
 `}
                   </code>
+                  <div id='resources2'></div>
                 </pre>
               </p>
             </div>
           </div>
+          <div id='resources'></div>
         </section>
 
         <section className={classes.ResourcesContainer}>
           <div>
             <div>
-              <h1 id='resources' className={classes.ResourcesText}>
-                Resources
-              </h1>
+              <h1 className={classes.ResourcesText}>Resources</h1>
             </div>
             <div>
               <p>

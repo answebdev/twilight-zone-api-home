@@ -1,9 +1,12 @@
-.PageContainer {
+/* .PageContainer {
   padding-top: 4em;
-}
+} */
 
-.MainSection {
+/* .MainSection {
   padding: 2em 8em;
+} */
+.SectionsContainer {
+  padding: 4em 8em 4em 8em;
 }
 
 .Heading {
