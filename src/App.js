@@ -7,11 +7,6 @@ import Error from './components/pages/Error';
 
 import './App.css';
 
-import smoothscroll from 'smoothscroll-polyfill';
-
-// kick off the polyfill!
-smoothscroll.polyfill();
-
 const App = () => {
   return (
     // <div class='app-container'>
