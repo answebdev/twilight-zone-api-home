@@ -4,6 +4,7 @@ import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import classes from '../../styles/Home.module.css';
 import useWindowDimensions from '../../utils/useWindowDimensions';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import Prism from 'prismjs';
 //import 'prismjs/themes/prism-okaidia.css';
@@ -24,6 +25,8 @@ const Home = ({ history }) => {
 
   useEffect(() => {
     Prism.highlightAll();
+    // kick off the polyfill!
+    smoothscroll.polyfill();
     // Scroll to top of page:
     window.scrollTo(0, 0);
 
