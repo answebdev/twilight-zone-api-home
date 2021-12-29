@@ -47,6 +47,8 @@ const Home = ({ history }) => {
     <div className={classes.PageContainer}>
       <Helmet>
         <title>The Twilight Zone API</title>
+        <script src='https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js'></script>
+        <script src='https://unpkg.com/smoothscroll-anchor-polyfill'></script>
       </Helmet>
       <Navbar />
 
