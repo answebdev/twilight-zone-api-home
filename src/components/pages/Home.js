@@ -22,12 +22,11 @@ const Home = ({ history }) => {
   //   // Scroll to top of page:
   //   window.scrollTo(0, 0);
   // });
-  // kick off the polyfill!
-  smoothscroll.polyfill();
 
   useEffect(() => {
     Prism.highlightAll();
-
+    // Polyfill:
+    smoothscroll.polyfill();
     // Scroll to top of page:
     window.scrollTo(0, 0);
 
