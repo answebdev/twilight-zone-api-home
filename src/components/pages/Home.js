@@ -35,7 +35,6 @@ const Home = ({ history }) => {
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
     // (scroll down to see Noah's post):
     const hash = history.location.hash;
-
     if (hash && document.getElementById(hash.substr(1))) {
       // Check if there is a hash and if an element with that id exists
       document
