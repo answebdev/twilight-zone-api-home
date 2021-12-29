@@ -4,7 +4,7 @@ html {
   line-height: 1.5;
   /* scroll-behavior: smooth; */
   color: #141414;
-  /* For scrolling in Safar: */
+  /* For scrolling in Safari: */
   --scroll-behavior: smooth;
   /* Normal CSS property for browsers with native support */
   scroll-behavior: smooth;
