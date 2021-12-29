@@ -29,7 +29,7 @@ const Home = ({ history }) => {
     smoothscroll.polyfill();
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     // Scroll to top of page:
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
 
     // Fix bug in Firefox and Safari (hash links not working)-
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
