@@ -66,7 +66,6 @@ const Home = ({ history }) => {
                 Get Started
               </a> */}
               <a
-                onClick={() => (history.location.hash = '/')}
                 href={width < 768 ? '#docs2' : '#docs'}
                 className={classes.GetStarted}
               >
