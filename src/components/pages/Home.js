@@ -41,6 +41,9 @@ const Home = ({ history }) => {
         .getElementById(hash.substr(1))
         .scrollIntoView({ behavior: 'smooth' });
     }
+
+    window.location.hash.slice(1); // remove leading '#'
+    
   }, [history.location.hash]); // Fires when component mounts and every time hash changes
 
   return (
