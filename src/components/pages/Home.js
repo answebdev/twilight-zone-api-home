@@ -67,8 +67,7 @@ const Home = ({ history }) => {
               </a> */}
               <a
                 href={width < 768 ? '#docs2' : '#docs'}
-                // className={classes.GetStarted}
-                className='hack15-menu-button'
+                className={classes.GetStarted}
               >
                 Get Started
               </a>
