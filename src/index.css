@@ -4,7 +4,8 @@ html {
   line-height: 1.5;
   /* scroll-behavior: smooth; */
   color: #141414;
-  /* --scroll-behavior: smooth; */
+  /* For scrolling in Safar: */
+  --scroll-behavior: smooth;
   /* Normal CSS property for browsers with native support */
   scroll-behavior: smooth;
 }
