@@ -4,10 +4,7 @@ html {
   line-height: 1.5;
   /* scroll-behavior: smooth; */
   color: #141414;
-
-  /* CSS custom property for the polyfill */
-  --scroll-behavior: smooth;
-
+  /* --scroll-behavior: smooth; */
   /* Normal CSS property for browsers with native support */
   scroll-behavior: smooth;
 }
