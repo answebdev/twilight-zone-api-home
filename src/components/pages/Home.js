@@ -11,15 +11,6 @@ import Prism from 'prismjs';
 import 'prismjs/themes/prism-twilight.css';
 // import 'prismjs/themes/prism-tomorrow.css';
 
-// Import any polyfill to enable smoothscroll for JS APIs
-import smoothscrollPolyfill from 'smoothscroll-polyfill';
-
-// Import this package to apply the smoothscroll to anchor links
-import smoothscrollAnchorPolyfill from 'smoothscroll-anchor-polyfill';
-
-// (Unlike this package, smoothscroll-polyfill needs to be actively invoked: )
-// smoothscrollPolyfill.polyfill();
-
 // Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
@@ -39,8 +30,6 @@ const Home = ({ history }) => {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     // Scroll to top of page:
     window.scrollTo(0, 0);
-
-    smoothscrollPolyfill.polyfill();
 
     // Fix bug in Firefox and Safari (hash links not working)-
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
