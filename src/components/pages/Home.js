@@ -23,6 +23,8 @@ const Home = ({ history }) => {
   //   window.scrollTo(0, 0);
   // });
 
+  window.__forceSmoothScrollPolyfill__ = true;
+
   useEffect(() => {
     Prism.highlightAll();
     // kick off the polyfill!
