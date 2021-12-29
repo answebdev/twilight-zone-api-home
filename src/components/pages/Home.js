@@ -14,6 +14,9 @@ import 'prismjs/themes/prism-twilight.css';
 // Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
+// Polyfill:
+smoothscroll.polyfill();
+
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
@@ -25,8 +28,7 @@ const Home = ({ history }) => {
 
   useEffect(() => {
     Prism.highlightAll();
-    // Polyfill:
-    smoothscroll.polyfill();
+
     // Scroll to top of page:
     window.scrollTo(0, 0);
 
