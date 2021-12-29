@@ -11,6 +11,15 @@ import Prism from 'prismjs';
 import 'prismjs/themes/prism-twilight.css';
 // import 'prismjs/themes/prism-tomorrow.css';
 
+// Import any polyfill to enable smoothscroll for JS APIs
+import smoothscrollPolyfill from 'smoothscroll-polyfill';
+
+// Import this package to apply the smoothscroll to anchor links
+import smoothscrollAnchorPolyfill from 'smoothscroll-anchor-polyfill';
+
+// (Unlike this package, smoothscroll-polyfill needs to be actively invoked: )
+smoothscrollPolyfill.polyfill();
+
 // Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
