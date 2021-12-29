@@ -22,15 +22,14 @@ const Home = ({ history }) => {
   //   // Scroll to top of page:
   //   window.scrollTo(0, 0);
   // });
+  // kick off the polyfill!
+  smoothscroll.polyfill();
 
   useEffect(() => {
     Prism.highlightAll();
 
     // Scroll to top of page:
     window.scrollTo(0, 0);
-
-    // kick off the polyfill!
-    smoothscroll.polyfill();
 
     // Fix bug in Firefox and Safari (hash links not working)-
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
