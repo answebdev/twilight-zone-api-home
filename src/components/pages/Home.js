@@ -35,15 +35,15 @@ const Home = ({ history }) => {
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
     // (scroll down to see Noah's post):
     const hash = history.location.hash;
+
+    window.location.hash.slice(1); // remove leading '#'
+
     if (hash && document.getElementById(hash.substr(1))) {
       // Check if there is a hash and if an element with that id exists
       document
         .getElementById(hash.substr(1))
         .scrollIntoView({ behavior: 'smooth' });
     }
-
-    window.location.hash.slice(1); // remove leading '#'
-    
   }, [history.location.hash]); // Fires when component mounts and every time hash changes
 
   return (
