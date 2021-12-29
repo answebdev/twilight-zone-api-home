@@ -66,7 +66,7 @@ const Home = ({ history }) => {
                 Get Started
               </a> */}
               <a
-                onClick={() => (document.location = '#docs')}
+                onClick={() => window.scrollTo(0, 0)}
                 href={width < 768 ? '#docs2' : '#docs'}
                 className={classes.GetStarted}
               >
