@@ -43,6 +43,8 @@ const Home = ({ history }) => {
     }
   }, [history.location.hash]); // Fires when component mounts and every time hash changes
 
+  history.location.hash = '/';
+
   return (
     <div className={classes.PageContainer}>
       <Helmet>
