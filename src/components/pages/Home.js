@@ -22,14 +22,14 @@ const Home = ({ history }) => {
   //   window.scrollTo(0, 0);
   // });
 
-  // Fix bug in Firefox and Safari (hash links not working)-
-  // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
-  // (scroll down to see post)
   useEffect(() => {
     Prism.highlightAll();
     // Scroll to top of page:
     window.scrollTo(0, 0);
 
+    // Fix bug in Firefox and Safari (hash links not working)-
+    // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
+    // (scroll down to see Noah's post):
     const hash = history.location.hash;
     if (hash && document.getElementById(hash.substr(1))) {
       // Check if there is a hash and if an element with that id exists
