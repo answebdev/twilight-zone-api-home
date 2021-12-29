@@ -23,12 +23,13 @@ const Home = ({ history }) => {
   //   window.scrollTo(0, 0);
   // });
 
+  document.querySelector('#docs').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#docs2').scrollIntoView({ behavior: 'smooth' });
+
   useEffect(() => {
     Prism.highlightAll();
     // Polyfill:
     smoothscroll.polyfill();
-    document.querySelector('#docs').scrollIntoView({ behavior: 'smooth' });
-    document.querySelector('#docs2').scrollIntoView({ behavior: 'smooth' });
     // Scroll to top of page:
     window.scrollTo(0, 0);
 
