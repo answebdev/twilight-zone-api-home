@@ -43,8 +43,6 @@ const Home = ({ history }) => {
     }
   }, [history.location.hash]); // Fires when component mounts and every time hash changes
 
-  history.location.hash = '/';
-
   return (
     <div className={classes.PageContainer}>
       <Helmet>
@@ -68,6 +66,7 @@ const Home = ({ history }) => {
                 Get Started
               </a> */}
               <a
+                onClick={() => (history.location.hash = '/')}
                 href={width < 768 ? '#docs2' : '#docs'}
                 className={classes.GetStarted}
               >
