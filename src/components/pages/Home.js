@@ -26,7 +26,7 @@ const Home = ({ history }) => {
   useEffect(() => {
     Prism.highlightAll();
     // Polyfill:
-    smoothscroll.polyfill();
+    // smoothscroll.polyfill();
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     // Scroll to top of page:
     window.scrollTo(0, 0);
