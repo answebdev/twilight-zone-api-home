@@ -14,9 +14,6 @@ import 'prismjs/themes/prism-twilight.css';
 // Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
 // Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
-// Polyfill:
-smoothscroll.polyfill();
-
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
@@ -27,9 +24,12 @@ const Home = ({ history }) => {
   // });
 
   useEffect(() => {
-    Prism.highlightAll();
-
+    smoothscroll.polyfill();
     // Scroll to top of page:
+
+    Prism.highlightAll();
+    // Polyfill:
+
     window.scrollTo(0, 0);
 
     // Fix bug in Firefox and Safari (hash links not working)-
