@@ -36,8 +36,6 @@ const Home = ({ history }) => {
     // (scroll down to see Noah's post):
     const hash = history.location.hash;
 
-    window.location.hash.slice(1); // remove leading '#'
-
     if (hash && document.getElementById(hash.substr(1))) {
       // Check if there is a hash and if an element with that id exists
       document
