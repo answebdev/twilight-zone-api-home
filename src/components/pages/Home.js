@@ -4,7 +4,7 @@ import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import classes from '../../styles/Home.module.css';
 import useWindowDimensions from '../../utils/useWindowDimensions';
-import smoothscroll from 'smoothscroll-polyfill';
+// import smoothscroll from 'smoothscroll-polyfill';
 
 import Prism from 'prismjs';
 //import 'prismjs/themes/prism-okaidia.css';
@@ -24,12 +24,10 @@ const Home = ({ history }) => {
   // });
 
   useEffect(() => {
-    smoothscroll.polyfill();
-    // Scroll to top of page:
-
     Prism.highlightAll();
     // Polyfill:
-
+    // smoothscroll.polyfill();
+    // // Scroll to top of page:
     window.scrollTo(0, 0);
 
     // Fix bug in Firefox and Safari (hash links not working)-
