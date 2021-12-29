@@ -39,6 +39,7 @@ const Home = ({ history }) => {
     if (hash && document.getElementById(hash.substr(1))) {
       // Check if there is a hash and if an element with that id exists
       document
+        .getElementById(hash.substr(0))
         .getElementById(hash.substr(1))
         .scrollIntoView({ behavior: 'smooth' });
     }
