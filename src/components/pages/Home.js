@@ -31,6 +31,9 @@ const Home = ({ history }) => {
     // Scroll to top of page:
     window.scrollTo(0, 0);
 
+    document.getElementById('docs').scrollIntoView(true);
+    document.getElementById('docs2').scrollIntoView(true);
+
     // Fix bug in Firefox and Safari (hash links not working)-
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
     // (scroll down to see Noah's post):
