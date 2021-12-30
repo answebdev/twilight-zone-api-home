@@ -19,9 +19,8 @@ import 'prismjs/themes/prism-twilight.css';
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
-  handleHashUrl();
-
   useEffect(() => {
+    handleHashUrl();
     Prism.highlightAll();
     // Polyfill:
     smoothscroll.polyfill();
