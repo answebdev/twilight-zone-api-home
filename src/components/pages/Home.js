@@ -6,6 +6,8 @@ import classes from '../../styles/Home.module.css';
 import useWindowDimensions from '../../utils/useWindowDimensions';
 import smoothscroll from 'smoothscroll-polyfill';
 
+import handleHashUrl from '../../utils/handleHashUrl';
+
 import Prism from 'prismjs';
 //import 'prismjs/themes/prism-okaidia.css';
 import 'prismjs/themes/prism-twilight.css';
@@ -17,11 +19,7 @@ import 'prismjs/themes/prism-twilight.css';
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
-  // useEffect(() => {
-  //   Prism.highlightAll();
-  //   // Scroll to top of page:
-  //   window.scrollTo(0, 0);
-  // });
+  handleHashUrl();
 
   useEffect(() => {
     Prism.highlightAll();
@@ -62,19 +60,17 @@ const Home = ({ history }) => {
             <br />
             <br />
             <div className={classes.Buttons}>
-              {/* <a href='#docs' className={classes.GetStarted}>
-                Get Started
-              </a> */}
               <a
                 href={width < 768 ? '#docs2' : '#docs'}
-                className={classes.GetStarted}
+                className={`${classes.GetStarted} ${'hashed'}`}
               >
                 Get Started
               </a>
               <p></p>
               <a
                 href={width < 768 ? '#resources2' : '#resources'}
-                className={classes.GetStarted}
+                className={`${classes.GetStarted} ${'hashed'}`}
+                // className={classes.GetStarted}
               >
                 Resources
               </a>
