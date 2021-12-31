@@ -30,6 +30,12 @@ const Home = ({ history }) => {
   });
 
   useEffect(() => {
+    window.history.replaceState(
+      '',
+      document.title,
+      window.location.origin + window.location.pathname + window.location.search
+    );
+
     Prism.highlightAll();
     // Polyfill:
     smoothscroll.polyfill();
