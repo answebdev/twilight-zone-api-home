@@ -28,7 +28,7 @@ const Home = ({ history }) => {
       window.location.origin + window.location.pathname + window.location.search
     );
 
-    //  smoothscroll.polyfill();
+    smoothscroll.polyfill();
     // For Safari:
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     window.scrollTo(0, 0);
