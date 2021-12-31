@@ -18,13 +18,13 @@ const Navbar = () => (
       </div>
     </div>
     <ul className='list-container'>
-      <div className='navbar-item'>
-        <li>
-          <Link className='nav-link' to='/'>
-            Home
-          </Link>
-        </li>
-      </div>
+      {/* <div className='navbar-item'> */}
+      <li className='navbar-item'>
+        <Link className='nav-link' to='/'>
+          Home
+        </Link>
+      </li>
+      {/* </div> */}
       {/* <div className='navbar-item'>
         <li>
           <a className='nav-link' href='#docs'>
@@ -39,13 +39,13 @@ const Navbar = () => (
           </a>
         </li>
       </div> */}
-      <div className='navbar-item'>
-        <li>
-          <Link className='nav-link' to='/about'>
-            About
-          </Link>
-        </li>
-      </div>
+      {/* <div className='navbar-item'> */}
+      <li className='navbar-item'>
+        <Link className='nav-link' to='/about'>
+          About
+        </Link>
+      </li>
+      {/* </div> */}
       {/* <div className='navbar-item'>
         <li>
           <Link className='nav-link' to='/contact'>
