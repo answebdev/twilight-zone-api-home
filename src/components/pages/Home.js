@@ -37,6 +37,8 @@ const Home = ({ history }) => {
         .getElementById(hash.substr(1))
         .scrollIntoView({ behavior: 'smooth' });
     }
+
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   });
 
   useEffect(() => {
