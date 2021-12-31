@@ -27,6 +27,7 @@ const Home = ({ history }) => {
       document.title,
       window.location.origin + window.location.pathname + window.location.search
     );
+
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
     window.scrollTo(0, 0);
 

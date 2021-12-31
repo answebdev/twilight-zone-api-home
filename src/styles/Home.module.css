@@ -260,4 +260,8 @@ tr:nth-child(even) {
   .SectionsContainer {
     padding: 2em;
   }
+
+  .TableContainer {
+    font-size: 13px;
+  }
 }
