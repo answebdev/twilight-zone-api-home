@@ -13,17 +13,17 @@ const Navbar = () => (
       </li>
     </div> */}
     <div className='navbar-title navbar-item'>
-      <li>
+      <div>
         <span>The Twilight Zone API</span>
-      </li>
+      </div>
     </div>
     <ul>
       <div className='navbar-item'>
-        <li>
+        <div>
           <Link className='nav-link' to='/'>
             Home
           </Link>
-        </li>
+        </div>
       </div>
       {/* <div className='navbar-item'>
         <li>
@@ -40,11 +40,11 @@ const Navbar = () => (
         </li>
       </div> */}
       <div className='navbar-item'>
-        <li>
+        <div>
           <Link className='nav-link' to='/about'>
             About
           </Link>
-        </li>
+        </div>
       </div>
       {/* <div className='navbar-item'>
         <li>
