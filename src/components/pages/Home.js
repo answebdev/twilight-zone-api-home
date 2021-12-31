@@ -41,21 +41,25 @@ const Home = ({ history }) => {
   //   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
   // });
 
+  // useEffect(() => {
+  //   // Polyfill:
+  //   smoothscroll.polyfill();
+  //   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+  //   // Scroll to top of page:
+  //   window.scrollTo(0, 0);
+  // });
+
   useEffect(() => {
-    // Polyfill:
-    smoothscroll.polyfill();
-    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-    // Scroll to top of page:
     window.scrollTo(0, 0);
   });
 
   useEffect(() => {
     Prism.highlightAll();
-    // // Polyfill:
-    // smoothscroll.polyfill();
-    // window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-    // // Scroll to top of page:
-    // window.scrollTo(0, 0);
+    // Polyfill:
+    smoothscroll.polyfill();
+    window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    // Scroll to top of page:
+    window.scrollTo(0, 0);
 
     // Fix bug in Firefox and Safari (hash links not working)-
     // Source: https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
