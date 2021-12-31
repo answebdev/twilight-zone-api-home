@@ -20,16 +20,16 @@ import 'prismjs/themes/prism-twilight.css';
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
-  useEffect(() => {
-    handleHashUrl();
-    window.history.replaceState(
-      '',
-      document.title,
-      window.location.origin + window.location.pathname + window.location.search
-    );
+  // useEffect(() => {
+  //   handleHashUrl();
+  //   window.history.replaceState(
+  //     '',
+  //     document.title,
+  //     window.location.origin + window.location.pathname + window.location.search
+  //   );
 
-    window.scrollTo(0, 0);
-  });
+  //   window.scrollTo(0, 0);
+  // });
 
   useEffect(() => {
     Prism.highlightAll();
