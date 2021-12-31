@@ -12,6 +12,7 @@
 .Heading {
   color: #141414;
   font-size: 38px;
+  padding-top: 2em;
 }
 
 .Subheading {
@@ -25,4 +26,110 @@
 
 .Link:hover {
   text-decoration: underline;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media screen and (min-width: 981px) and (max-width: 1200px) {
+  /* body {
+    background-color: red;
+  } */
+
+  /* .Hero {
+    height: 100vh;
+  } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  /* body {
+    background-color: yellow;
+  } */
+
+  /* .Hero {
+    height: 100vh;
+  } */
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* body {
+    background-color: steelblue;
+  } */
+
+  .Heading {
+    padding-top: 2em;
+  }
+
+  .SectionsContainer {
+    padding: 4em;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 640px) {
+  /* body {
+    background-color: brown;
+  } */
+
+  .Heading {
+    padding-top: 2em;
+  }
+
+  .SectionsContainer {
+    padding: 4em;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 550px) {
+  /* body {
+    background-color: salmon;
+  } */
+
+  .Heading {
+    padding-top: 3em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 470px) {
+  /* body {
+    background-color: black;
+  } */
+
+  .Heading {
+    padding-top: 3em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 430px) {
+  /* body {
+    background-color: burlywood;
+  } */
+
+  .Heading {
+    padding-top: 3em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+  /* body {
+    background-color: pink;
+  } */
+
+  .Heading {
+    padding-top: 3em;
+  }
+
+  .SectionsContainer {
+    padding: 2em;
+  }
 }
