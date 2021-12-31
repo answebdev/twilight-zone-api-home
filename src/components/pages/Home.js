@@ -4,6 +4,9 @@ import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import classes from '../../styles/Home.module.css';
 import useWindowDimensions from '../../utils/useWindowDimensions';
+
+import handleHashUrl from '../../utils/handleHashUrl';
+
 import smoothscroll from 'smoothscroll-polyfill';
 
 import Prism from 'prismjs';
@@ -17,11 +20,14 @@ import 'prismjs/themes/prism-twilight.css';
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
 
-  // useEffect(() => {
-  //   Prism.highlightAll();
-  //   // Scroll to top of page:
-  //   window.scrollTo(0, 0);
-  // });
+  useEffect(() => {
+    handleHashUrl();
+    window.history.replaceState(
+      '',
+      document.title,
+      window.location.origin + window.location.pathname + window.location.search
+    );
+  });
 
   useEffect(() => {
     Prism.highlightAll();
@@ -67,16 +73,16 @@ const Home = ({ history }) => {
               </a> */}
               <a
                 href={width < 768 ? '#docs2' : '#docs'}
-                className={classes.GetStarted}
-                // className={`${classes.GetStarted} ${'hashed'}`}
+                //className={classes.GetStarted}
+                className={`${classes.GetStarted} ${'hashed'}`}
               >
                 Get Started
               </a>
               <p></p>
               <a
                 href={width < 768 ? '#resources2' : '#resources'}
-                className={classes.GetStarted}
-                // className={`${classes.GetStarted} ${'hashed'}`}
+                //className={classes.GetStarted}
+                className={`${classes.GetStarted} ${'hashed'}`}
               >
                 Resources
               </a>
