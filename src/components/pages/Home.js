@@ -28,7 +28,7 @@ const Home = ({ history }) => {
       window.location.origin + window.location.pathname + window.location.search
     );
 
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 
     const hash = history.location.hash;
     if (hash && document.getElementById(hash.substr(1))) {
