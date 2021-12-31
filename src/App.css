@@ -105,6 +105,12 @@ main {
   border-top: 2px solid #545454;
 }
 
+#home {
+  /* For smooth scrolling in Safari: */
+  --scroll-behavior: smooth;
+  /* Normal CSS property for browsers with native support */
+  scroll-behavior: smooth;
+}
 /* dev blog navbar css */
 /* Navbar */
 /* .navbar {
