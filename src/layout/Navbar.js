@@ -17,13 +17,13 @@ const Navbar = () => (
         <span>The Twilight Zone API</span>
       </div>
     </div>
-    <ul>
+    <ul className='list-container'>
       <div className='navbar-item'>
-        <div>
+        <li>
           <Link className='nav-link' to='/'>
             Home
           </Link>
-        </div>
+        </li>
       </div>
       {/* <div className='navbar-item'>
         <li>
@@ -40,11 +40,11 @@ const Navbar = () => (
         </li>
       </div> */}
       <div className='navbar-item'>
-        <div>
+        <li>
           <Link className='nav-link' to='/about'>
             About
           </Link>
-        </div>
+        </li>
       </div>
       {/* <div className='navbar-item'>
         <li>
