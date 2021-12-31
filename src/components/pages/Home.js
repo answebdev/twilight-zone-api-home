@@ -28,6 +28,8 @@ const Home = ({ history }) => {
       window.location.origin + window.location.pathname + window.location.search
     );
 
+    // window.scrollTo(0, 0);
+
     const hash = history.location.hash;
     if (hash && document.getElementById(hash.substr(1))) {
       // Check if there is a hash and if an element with that id exists
@@ -37,7 +39,6 @@ const Home = ({ history }) => {
     }
 
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-    window.scrollTo(0, 0);
   });
 
   useEffect(() => {
