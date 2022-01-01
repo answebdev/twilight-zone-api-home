@@ -57,8 +57,6 @@
 .Safety:hover {
   background-color: #ffffff;
   transition-duration: 0.5s;
-  /* color: #0f4880; */
-  /* color: #141414; */
   color: #545454;
   outline: none;
 }

@@ -1,9 +1,11 @@
-import '../App.css';
+import classes from '../styles/Footer.module.css';
 
 const Footer = () => (
   <div>
-    <div class='footer'>
-      <span id='footer-text'>&copy; Copyright 2022 The Twilight Zone API</span>
+    <div className={classes.Footer}>
+      <span className={classes.FooterText}>
+        &copy; Copyright 2022 The Twilight Zone API
+      </span>
     </div>
   </div>
 );

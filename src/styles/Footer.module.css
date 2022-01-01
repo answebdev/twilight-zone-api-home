@@ -1,0 +1,21 @@
+/* Sticky (But Not Fixed) Footer,
+Source: https://chrisbracco.com/css-sticky-footer-effect/ */
+
+.Footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 18px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #dddddd;
+  text-align: center;
+}
+/* ========================= */
+
+.FooterText {
+  color: #141414;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  margin-top: 5px;
+}

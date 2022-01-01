@@ -11,12 +11,12 @@ const handleHashUrl = () => {
         setTimeout(() => {
           // Call removeHash function after set timeout
           removeHash();
-        }, 5); // 5 milliseconds. We need to give it enough time to actually do the anchor scroll
+        }, 5); // 5 milliseconds - needed to give it enough time to actually do the anchor scroll
       });
     });
 
     // removeHash function
-    // uses HTML5 history API to manipulate the location bar
+    // Uses HTML5 history API to manipulate the location bar
     function removeHash() {
       window.history.replaceState(
         '',

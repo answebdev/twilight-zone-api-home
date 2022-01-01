@@ -148,54 +148,19 @@ main {
   list-style: none;
 }
 
-/* .navbar a {
-  margin: 0 0.25rem;
-  margin-bottom: -30px;
-} */
-
-/* dev blog navbar css */
-
 /* Styles for Sticky (But Not Fixed) Footer */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-/* ========================= */
-
-/* Sticky (But Not Fixed) Footer,
-Source: https://chrisbracco.com/css-sticky-footer-effect/ */
-.footer {
-  position: absolute;
-  right: 0;
-  /* bottom: -5px; */
-  bottom: 0;
-  left: 0;
-  padding: 18px;
-  background-color: #f4f4f4;
-  /* border-top: 1px solid #545454; */
-  border-top: 1px solid #dddddd;
-  text-align: center;
-}
-/* ========================= */
-
-#footer-text {
-  color: #141414;
-  letter-spacing: 0.5px;
-  font-size: 16px;
-  margin-top: 5px;
-}
-/* End Footer */
+/* End Styles for Sticky Footer */
 
 /* ===== MEDIA QUERIES ===== */
 
 @media screen and (min-width: 981px) and (max-width: 1200px) {
   /* body {
     background-color: red;
-  } */
-
-  /* .navbar-title {
-    padding-bottom: 0.5em;
   } */
 }
 

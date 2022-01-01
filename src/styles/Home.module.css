@@ -1,20 +1,13 @@
 .Hero {
-  /* height: 550px; */
-  /* height: 100vh; */
   height: 100%;
-  /* background-color: #0f4880; */
-  /* background-color: #141414; */
   background-color: #545454;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .Hero .Overlay {
-  /* background-color: #0f4880; */
-  /* background-color: #141414; */
   background-color: #545454;
   position: absolute;
   height: 100%;
@@ -29,7 +22,6 @@
   padding: 8em;
   color: #ffffff;
   z-index: 2;
-  /* text-align: center; */
 }
 
 .Hero .Content .MainTitleText {
@@ -44,7 +36,6 @@
 
 .LeadText {
   font-size: 18px;
-  /* margin-top: -20px; */
 }
 
 .Buttons {
@@ -64,7 +55,6 @@
   height: 35px;
   border-style: solid;
   border-radius: 0;
-  /* border-radius: 0.5em; */
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -72,8 +62,6 @@
 .GetStarted:hover {
   background-color: #ffffff;
   transition-duration: 0.5s;
-  /* color: #0f4880; */
-  /* color: #141414; */
   color: #545454;
   outline: none;
 }
@@ -98,7 +86,6 @@
 
 table {
   border-collapse: collapse;
-  /* border-spacing: 0; */
   width: 100%;
 }
 

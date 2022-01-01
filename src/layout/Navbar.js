@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-// Adapted from: https://codepen.io/doytch/pen/Kyypba
-
 const Navbar = () => (
   <header className='navbar'>
     <div className='navbar-title navbar-item'>
