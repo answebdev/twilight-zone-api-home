@@ -9,14 +9,13 @@ import './App.css';
 
 const App = () => {
   return (
-    // <div class='app-container'>
     <div>
       <Router>
         <div>
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
-            {/* Use Maintenance with index path (instead of Home) when needing to temporarily shut down site: */}
+            {/* Use Maintenance with index path (instead of Home component) when needing to temporarily shut down site: */}
             {/* <Route exact path='/' component={Maintenance} /> */}
             <Route component={Error} />
           </Switch>

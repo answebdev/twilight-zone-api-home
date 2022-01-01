@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet';
 import spiral from '../../../src/img/spiral.webp';
 import classes from '../../styles/Maintenance.module.css';
 
-// Spiral source: https://www.pngitem.com/middle/hTxhbJm_transparent-twilight-zone-spiral-hd-png-download/
-
 const Maintenance = () => {
   return (
     <div className={classes.Maintenance}>
