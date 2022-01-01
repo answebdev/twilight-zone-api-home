@@ -4,18 +4,10 @@ import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import classes from '../../styles/Home.module.css';
 import useWindowDimensions from '../../utils/useWindowDimensions';
-
 import handleHashUrl from '../../utils/handleHashUrl';
-
 import smoothscroll from 'smoothscroll-polyfill';
-
 import Prism from 'prismjs';
-//import 'prismjs/themes/prism-okaidia.css';
 import 'prismjs/themes/prism-twilight.css';
-// import 'prismjs/themes/prism-tomorrow.css';
-
-// Hero Source: https://codepen.io/iamaminmajid/pen/XNwzra
-// Other Source: https://codepen.io/audreydc/pen/ZOWvBj
 
 const Home = ({ history }) => {
   const { width } = useWindowDimensions();
@@ -39,10 +31,6 @@ const Home = ({ history }) => {
         .scrollIntoView({ behavior: 'smooth' });
     }
   });
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // });
 
   useEffect(() => {
     Prism.highlightAll();
@@ -83,12 +71,8 @@ const Home = ({ history }) => {
             <br />
             <br />
             <div className={classes.Buttons}>
-              {/* <a href='#docs' className={classes.GetStarted}>
-                Get Started
-              </a> */}
               <a
                 href={width < 768 ? '#docs2' : '#docs'}
-                //className={classes.GetStarted}
                 className={`${classes.GetStarted} ${'hashed'}`}
               >
                 Get Started
@@ -96,7 +80,6 @@ const Home = ({ history }) => {
               <p></p>
               <a
                 href={width < 768 ? '#resources2' : '#resources'}
-                //className={classes.GetStarted}
                 className={`${classes.GetStarted} ${'hashed'}`}
               >
                 Resources
@@ -444,28 +427,3 @@ const Home = ({ history }) => {
 };
 
 export default Home;
-
-// import spiral from './spiral.png';
-// import './App.css';
-
-// // Spiral source: https://www.pngitem.com/middle/hTxhbJm_transparent-twilight-zone-spiral-hd-png-download/
-
-// // IDEA: USE THIS PAGE AS THE ERROR PAGE LATER WHEN FINALLY BUILDING THIS SITE
-
-// function App() {
-//   return (
-//     <div className='App'>
-//       <header className='App-header'>
-//         <img src={spiral} className='App-logo' alt='logo' />
-//         <p>The Twilight Zone API</p>
-//         <p>
-//           You are about to enter another dimension. But not yet.
-//           <br />
-//           Please check back in the future.
-//         </p>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
