@@ -1,47 +1,18 @@
-/* .App {
-  text-align: center;
-}
+/* GLOBAL STYLES */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles for Sticky (But Not Fixed) Footer */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
+/* End Styles for Sticky Footer */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: spiral-spin infinite 5s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes spiral-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 html {
   height: 100%;
   box-sizing: border-box;
 }
 
-/* Navbar Styles */
 body {
   /* Need for footer: */
   position: relative;
@@ -59,102 +30,6 @@ body {
 main {
   margin: 16px;
 }
-
-.navbar {
-  /* Fix navbar to the top: */
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  /* End fix navbar styles */
-
-  /* border-bottom: 2px solid #0f4880; */
-  /* border-bottom: 2px solid #141414; */
-  /* border-bottom: 1px solid #545454; */
-  border-bottom: 1px solid #dddddd;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  background: #f4f4f4;
-  /* color: #0f4880; */
-  color: #141414;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 300;
-}
-
-.navbar-title {
-  font-weight: 700;
-  margin-right: auto;
-  /* font-size: 150%; */
-  font-size: 125%;
-  padding: 12px 16px;
-}
-
-/* .list-container {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-} */
-
-.navbar-item {
-  padding: 6px 16px;
-  vertical-align: middle;
-}
-
-.nav-link {
-  color: #141414;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  border-top: 2px solid #545454;
-}
-
-/* dev blog navbar css */
-/* Navbar */
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  width: 100%;
-  margin-bottom: 1rem;
-} */
-
-/* .nav-title {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  padding-bottom: 0.5em;
-  margin-top: 2.5px;
-} */
-/* 
-#links {
-  color: #c7d1d8 !important;
-  font-family: 'Quicksand', sans-serif;
-} */
-
-/* #links {
-  margin-bottom: -15px;
-  float: inherit;
-} */
-
-.navbar ul {
-  display: flex;
-}
-
-.navbar li {
-  list-style: none;
-}
-
-/* Styles for Sticky (But Not Fixed) Footer */
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-/* End Styles for Sticky Footer */
 
 /* ===== MEDIA QUERIES ===== */
 
@@ -174,154 +49,34 @@ main {
   /* body {
     background-color: steelblue;
   } */
-
-  .navbar {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar-title {
-    margin: 15px 0 0 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 551px) and (max-width: 640px) {
   /* body {
     background-color: brown;
   } */
-
-  .navbar {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar-title {
-    margin: 15px 0 0 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 471px) and (max-width: 550px) {
   /* body {
     background-color: salmon;
   } */
-
-  .navbar {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar-title {
-    margin: 15px 0 0 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 431px) and (max-width: 470px) {
   /* body {
     background-color: black;
   } */
-
-  .navbar {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar-title {
-    margin: 15px 0 0 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 430px) {
   /* body {
     background-color: burlywood;
   } */
-
-  .navbar {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar-title {
-    margin: 15px 0 0 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
   /* body {
     background-color: pink;
   } */
-
-  .navbar {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar-title {
-    margin: 15px 0 0 0;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
 }

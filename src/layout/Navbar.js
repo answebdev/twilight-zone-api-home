@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom';
-import '../App.css';
+import classes from '../styles/Navbar.module.css';
 
 const Navbar = () => (
-  <header className='navbar'>
-    <div className='navbar-title navbar-item'>
+  <header className={classes.Navbar}>
+    <div className={`${classes.NavbarTitle} ${classes.NavbarItem}`}>
       <div>
         <span>The Twilight Zone API</span>
       </div>
     </div>
-    <ul className='list-container'>
-      <li className='navbar-item'>
-        <Link className='nav-link' to='/'>
+    <ul>
+      <li className={classes.NavbarItem}>
+        <Link className={classes.NavLink} to='/'>
           Home
         </Link>
       </li>
-      <li className='navbar-item'>
-        <Link className='nav-link' to='/about'>
+      <li className={classes.NavbarItem}>
+        <Link className={classes.NavLink} to='/about'>
           About
         </Link>
       </li>
