@@ -27,25 +27,33 @@ const About = () => {
             <div>
               <h1 className={classes.Heading}>About</h1>
             </div>
-            <h2 className={classes.Subheading}>About the API</h2>
+
+            <h2 className={classes.Subheading}>About Me</h2>
             <p>
-              The Twilight Zone API was created by&nbsp;
+              Hi there. I am a front-end developer based in San Diego,
+              California. Feel free to check out my&nbsp;
               <a
                 className={classes.Link}
                 href='https://adolfschmuck.com/'
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                Adolf Schmuck
+                portfolio
               </a>
-              . This API is a collection of information based on the original
-              Twilight Zone television series, seasons 1-5 (1959-1964). I love
-              The Twilight Zone, and I was unable to find a Twilight Zone API
-              with the information that I wanted, so I decided to create my own.
-              I designed this site in the hopes of making it easy for developers
-              to see what information is available and to see what HTTP requests
-              are possible. The full documenation can be found in the
-              documenation section of the Home page.
+              &nbsp;for samples of my other projects and more.
+            </p>
+            <br />
+
+            <h2 className={classes.Subheading}>About the API</h2>
+            <p>
+              The Twilight Zone API is a collection of information based on the
+              original Twilight Zone television series, seasons 1-5 (1959-1964).
+              I love The Twilight Zone, and I was unable to find a Twilight Zone
+              API with the information that I wanted, so I decided to create my
+              own. I designed this site in the hopes of making it easy for
+              developers to see what information is available and to see what
+              HTTP requests are possible. The full documentation can be found in
+              the documentation section of the Home page.
             </p>
             <br />
 
@@ -98,12 +106,15 @@ const About = () => {
 
             <h2 className={classes.Subheading}>Issues</h2>
             <p>
-              I did my best to double- and triple-check the information in the
-              API. Alas, I am only human. If you come across any errors or
-              issues, feel free to let me know, and I will gladly correct them
-              as soon as I can.
+              I did my best to double-check and triple-check the information in
+              the API. However, if you come across any errors or issues, feel
+              free to send me a&nbsp;
+              <a className={classes.Link} href='mailto:adolf.schmuck@gmail.com'>
+                message
+              </a>
+              &nbsp;to let me know. I will gladly correct any error or address
+              any issue as soon as I can.
             </p>
-            <br />
           </div>
         </section>
       </div>
