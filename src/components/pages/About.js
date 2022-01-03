@@ -30,8 +30,8 @@ const About = () => {
 
             <h2 className={classes.Subheading}>About Me</h2>
             <p>
-              Hi there. I am a front-end developer based in San Diego,
-              California. Feel free to check out my&nbsp;
+              Hi there. I am a web developer in San Diego, California, and I
+              love building things for the web. Feel free to check out my&nbsp;
               <a
                 className={classes.Link}
                 href='https://adolfschmuck.com/'
