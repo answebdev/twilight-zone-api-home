@@ -33,7 +33,9 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 
 ## Development
 
-This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, , including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
+This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
+
+As for the API, a JSON file was created initially for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season), I created separate `.js` files
 
 ## Screenshots
 
