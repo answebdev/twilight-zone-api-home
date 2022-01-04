@@ -12,7 +12,7 @@ Please check out the live link for The Twilight Zone API documentation site here
 
 ## Table of Contents
 * [Technologies Used](#Technologies-Used)
-* [Development](#Developments)
+* [Development](#Development)
 * [Screenshots](#Screenshots)
 
 ## Technologies Used
