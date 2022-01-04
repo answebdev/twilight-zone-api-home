@@ -42,6 +42,10 @@ The development of The Twilight Zone API comes in two phase: API Development and
 
 This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
 
+#### useWindowDimensions Hook
+
+To make the site responsive, I used a combination of Flexbox and media queries, in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height, an issue arose on smaller screen sizes, where the “Documentation” header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook…
+
 ### API Development
 
 To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), a JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data from the JSON file and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season), I created separate `.js` files for each of the endpoints and their data. (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.). All of these files were exported separately by their endpoint name and brought into a new `db.js` file (see code below), which in turn was brought in to use in the server (`server.js`) as a single file:
