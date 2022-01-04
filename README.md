@@ -44,7 +44,42 @@ This site was created for the documentation of the custom-built Twilight Zone AP
 
 #### useWindowDimensions Hook
 
-To make the site responsive, I used a combination of Flexbox and media queries, in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height, an issue arose on smaller screen sizes, where the “Documentation” header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook…
+To make the site responsive, I used a combination of Flexbox and media queries, in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height on smaller screen sizes, an issue arose on smaller screen sizes, where the "Documentation" header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook - that I kept in a separate `utils` folder - that I was able to import and use in the Home page component (`Home.js`). I used the following hook to get the window dimensions (height and width):
+
+```
+import { useState, useEffect } from 'react';
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+export default function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+```
+
+Next, I imported the hook into the Home page component. For my purposes, I only needed the width:
+
+```
+const { width } = useWindowDimensions();
+```
 
 ### API Development
 
