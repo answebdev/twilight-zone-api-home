@@ -92,7 +92,7 @@ I then used `width` down below in `Home.js` component. For my "Get Started" butt
 </a>
 ```
 
-As you can see in the code below, I have created a `div` with the ID of `docs2` that is slightly above the original. This is where the user will be navigated to when the screen size falls below a width of 768. Some of the code was removed in this snippet, in order to make it easier to see where the anchor links are placed. But with the complete code in place (i.e., which includes all of the content), the "Documentation" header text now sits nicely right below the hero section on smaller screen sizes.
+As you can see in the code below, I created a `div` with the ID of `docs2` that is slightly above the original. This is where the user will be navigated to when the screen size falls below a width of 768. Some of the code was removed in this snippet, in order to make it easier to see where the anchor links are placed. But with the complete code in place (i.e., which includes all of the content), the "Documentation" header text now sits nicely right below the hero section on smaller screen sizes.
 
 ```
 <section>
