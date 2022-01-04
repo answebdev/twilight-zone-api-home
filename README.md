@@ -32,6 +32,8 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Facebook Developer Tools (Sharing Debugger)
 * Netlify
 
+[Back To Top](#Table-of-Contents)
+
 ## Development
 
 The development of The Twilight Zone API comes in two phase: API Development and the Site Development stage. In the first phase, the actual Twilight Zone API was built, deployed, and tested. In the second phase, the React site was created for the documentation of the API. Details of each phase are described below.
@@ -46,6 +48,8 @@ To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight
 
 ![Screenshot 04](screenshots/test-site.gif "Test Site")
 
+[Back To Top](#Table-of-Contents)
+
 ## Screenshots
 
 ![Screenshot 01](screenshots/twilightzone-screenshot01.png "Home Page")
@@ -53,3 +57,5 @@ To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight
 ![Screenshot 02](screenshots/twilightzone-screenshot02.png "Documentation Section")
 
 ![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
+
+[Back To Top](#Table-of-Contents)
