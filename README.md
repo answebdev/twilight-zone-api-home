@@ -38,6 +38,32 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 
 The development of The Twilight Zone API comes in two phase: API Development and the Site Development stage. In the first phase, the actual Twilight Zone API was built, deployed, and tested. In the second phase, the React site was created for the documentation of the API. Details of each phase are described below.
 
+### API Development
+
+To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), a JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data from the JSON file and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season), I created separate `.js` files for each of the endpoints and their data. (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.). All of these files were exported separately by their endpoint name and brought into a new `db.js` file (see code below), which in turn was brought in to use in the server (`server.js`) as a single file:
+
+```
+const episodes = require('./episodes');
+const season1 = require('./season1');
+const season2 = require('./season2');
+const season3 = require('./season3');
+const season4 = require('./season4');
+const season5 = require('./season5');
+
+module.exports = () => ({
+  episodes,
+  season1,
+  season2,
+  season3,
+  season4,
+  season5,
+});
+```
+
+This made it possible to serve and thus, deploy, each of these endpoints separately, which in the end resulted in a set of 6 common resources: `/episodes`, `/season1`, `/season2`, `/season3`, `/season4`, `/season5`, and `/season6`. At this point, the initial JSON file was no longer needed, since all of the data was converted into `.js` files, as described. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints (see below).
+
+![Screenshot 04](screenshots/test-site.gif "Test Site")
+
 ### Site Development
 
 This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
@@ -110,32 +136,6 @@ As you can see in the code below, I created a `div` with an ID of `docs2` that s
   <div id='docs'></div>
 </section>
 ```
-
-### API Development
-
-To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), a JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data from the JSON file and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season), I created separate `.js` files for each of the endpoints and their data. (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.). All of these files were exported separately by their endpoint name and brought into a new `db.js` file (see code below), which in turn was brought in to use in the server (`server.js`) as a single file:
-
-```
-const episodes = require('./episodes');
-const season1 = require('./season1');
-const season2 = require('./season2');
-const season3 = require('./season3');
-const season4 = require('./season4');
-const season5 = require('./season5');
-
-module.exports = () => ({
-  episodes,
-  season1,
-  season2,
-  season3,
-  season4,
-  season5,
-});
-```
-
-This made it possible to serve and thus, deploy, each of these endpoints separately, which in the end resulted in a set of 6 common resources: `/episodes`, `/season1`, `/season2`, `/season3`, `/season4`, `/season5`, and `/season6`. At this point, the initial JSON file was no longer needed, since all of the data was converted into `.js` files, as described. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints (see below).
-
-![Screenshot 04](screenshots/test-site.gif "Test Site")
 
 [Back To Top](#Table-of-Contents)
 
