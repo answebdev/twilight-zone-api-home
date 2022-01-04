@@ -81,7 +81,7 @@ Next, I imported the hook into the Home page component. For my purposes, I only 
 const { width } = useWindowDimensions();
 ```
 
-I then used `width` down below in `Home.js` component. For my "Get Started" button, I used an anchor tag in the `href` so that when the "Get Started" button is clicked, the user would be navigated to the "Documentation" section down below. This is where the issue arose. As described above, when the user is navigated to the "Documentation" section of the page on smaller screen sizes, the "Documentation" header text sat halfway underneath the hero section. To address this, I used a ternary operator and the `width` constant.
+I then used `width` down below in `Home.js` component. For my "Get Started" button, I used an anchor tag in the `href` so that when the "Get Started" button is clicked, the user would be navigated to the "Documentation" section down below. This is where the issue arose. As described above, when the user is navigated to the "Documentation" section of the page on smaller screen sizes (specifically, smaller than 768px in width), the "Documentation" header text sat halfway underneath the hero section. To address this, I used a ternary operator and the `width` constant. We can interpret this as saying that when the width of the window is smaller than 768px, then navigate to the anchor link with the URL of `#docs`; otherwise, navigate to the anchor link with the URL of `#docs`.
 
 ```
 <a
@@ -90,6 +90,25 @@ I then used `width` down below in `Home.js` component. For my "Get Started" butt
 >
   Get Started
 </a>
+```
+
+As you can see in the code below, I have created a `div` with the ID of `docs2` that is slightly above the original. This is where the user will be navigated to when the screen size falls below a width of 768. Some of the code was removed in this snippet, in order to make it easier to see where the anchor links are placed. But with the complete code in place (i.e., which includes all of the content), the "Documentation" header text now sits nicely right below the hero section on smaller screen sizes.
+
+```
+<section>
+  <div>
+    <h1>The Twilight Zone API</h1>
+    <p>
+      Make HTTP requests on the original Twilight Zone television series,
+      seasons 1-5 (1959-1964).
+    </p>
+    <div className={classes.Buttons}>
+      <a href={width < 768 ? '#docs2' : '#docs'}>Get Started</a>
+    </div>
+    <div id='docs2'></div>
+  </div>
+  <div id='docs'></div>
+</section>
 ```
 
 ### API Development
