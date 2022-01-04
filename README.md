@@ -31,11 +31,15 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Facebook Developer Tools (Sharing Debugger)
 * Netlify
 
-## Site Development
+## Development
+
+The development of The Twilight Zone API comes in two phase: API Development and the Site Development stage. In the first phase, the actualy Twilight Zone API was built, deployed, and tested. In the second phase, the React site was created for the documentation of the API. The details are described below.
+
+### Site Development
 
 This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
 
-## API Development
+### API Development
 
 To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), a JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data from the JSON file and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season), I created separate `.js` files for each of the endpoints and their data. (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.). All of these files were exported separately and by their endpoint name and brought into a new `db.js` file, which in turn exported everything to the server (`server.js`). This made it possible to serve and thus, deploy, each of these endpoints separately, which in the end resulted in a set of 6 common resources: `/episodes`, `/season1`, `/season2`, `/season3`, `/season4`, `/season5`, and `/season6`. At this point, the initial JSON file was no longer needed, as all of the data was converted into `.js` files, as described. To test the endpoints, I used Postman and Paw Cloud, and also created a simple HTML/CSS/JavaScript site in order to test each of the endpoints.
 
