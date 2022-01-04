@@ -33,7 +33,7 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 
 ## Development
 
-This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests.
+This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, , including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
 
 ## Screenshots
 
