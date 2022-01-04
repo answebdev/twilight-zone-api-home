@@ -81,6 +81,17 @@ Next, I imported the hook into the Home page component. For my purposes, I only 
 const { width } = useWindowDimensions();
 ```
 
+The down below in `Home.js` component, I used a ternary operator. For my "Get Started" button, I used an anchor tag in the `href` so that when the user clicks on the "Get Started" button, the user would navigate to the "Documentation" section down below. This is where the issue arose, and so to address this, I used a ternary operator here.
+
+```
+<a
+  href={width < 768 ? '#docs2' : '#docs'}
+  className={`${classes.GetStarted} ${'hashed'}`}
+>
+  Get Started
+</a>
+```
+
 ### API Development
 
 To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), a JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data from the JSON file and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season), I created separate `.js` files for each of the endpoints and their data. (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.). All of these files were exported separately by their endpoint name and brought into a new `db.js` file (see code below), which in turn was brought in to use in the server (`server.js`) as a single file:
