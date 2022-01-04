@@ -9,3 +9,23 @@ The Twilight Zone API allows you to make HTTP requests on the original Twilight 
 ## The Twilight Zone API Live Link
 
 Please check out the live link for The Twilight Zone API documentation site here: [The Twilight Zone API](https://thetwilightzoneapi.netlify.app/ "The Twilight Zone API")
+
+## Technologies Used
+
+* React
+* The Twilight Zone custom-built API
+* Prism
+* CSS (CSS Modules)
+* Flexbox
+* React Helmet
+* Smoothscroll Polyfill
+* Facebook Developer Tools (Sharing Debugger)
+* Netlify
+
+# Screenshots
+
+![Screenshot 01](screenshots/twilightzone-screenshot01.png "Home Page")
+
+![Screenshot 02](screenshots/twilightzone-screenshot02.png "Documentation Section")
+
+![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
