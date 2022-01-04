@@ -81,7 +81,7 @@ Next, I imported the hook into the home page component. For my purposes, I only 
 const { width } = useWindowDimensions();
 ```
 
-I then used `width` down below in the `Home.js` component. For my "Get Started" button, I used an anchor tag in the `href` so that when the "Get Started" button is clicked, the user would be navigated to the "Documentation" section down below. This is where the issue arose. As described above, when the user is navigated to the "Documentation" section of the page on smaller screen sizes (specifically, smaller than 768px in width), the "Documentation" header text sat halfway underneath the hero section. To address this, I used a ternary operator and the `width` constant. We can interpret this as saying that when the width of the window is smaller than 768px, then navigate to the anchor link with the URL of `#docs`; otherwise, navigate to the anchor link with the URL of `#docs`.
+I then used `width` down below in the `Home.js` component. For my "Get Started" button, I used an anchor tag in the `href` so that when the "Get Started" button is clicked, the user would be navigated to the "Documentation" section down below. This is where the issue arose. As described above, when the user is navigated to the "Documentation" section of the page on smaller screen sizes (specifically, smaller than 768px in width), the "Documentation" header text sat halfway underneath the hero section. To address this, I used a ternary operator and the `width` constant. This can be interpreted as saying that when the width of the window is smaller than 768px, then navigate to the anchor link with the URL of `#docs`; otherwise, navigate to the anchor link with the URL of `#docs`.
 
 ```
 <a
