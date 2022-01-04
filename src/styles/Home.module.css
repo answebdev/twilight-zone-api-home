@@ -125,19 +125,11 @@ tr:nth-child(even) {
   /* body {
     background-color: red;
   } */
-
-  /* .Hero {
-    height: 100vh;
-  } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
   /* body {
     background-color: yellow;
-  } */
-
-  /* .Hero {
-    height: 100vh;
   } */
 }
 
