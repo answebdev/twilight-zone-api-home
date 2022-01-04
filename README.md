@@ -28,6 +28,7 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Flexbox
 * React Helmet
 * Smoothscroll Polyfill
+* Responsively App
 * Facebook Developer Tools (Sharing Debugger)
 * Netlify
 
