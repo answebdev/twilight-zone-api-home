@@ -10,6 +10,10 @@ The Twilight Zone API allows you to make HTTP requests on the original Twilight 
 
 Please check out the live link for The Twilight Zone API documentation site here: [The Twilight Zone API](https://thetwilightzoneapi.netlify.app/ "The Twilight Zone API")
 
+## API Link
+
+Please go to the API documentation here: [The Twilight Zone API Documentation](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation")
+
 ## Table of Contents
 * [Technologies Used](#Technologies-Used)
 * [Development](#Development)
@@ -29,7 +33,7 @@ Please check out the live link for The Twilight Zone API documentation site here
 
 ## Development
 
-In terms of developing the application, I decided to build the app using React and CSS Modules. I decided to use pure CSS, instead of using frameworks, and to use Flexbox and media queries to create an application that would be responsive on both desktop and mobile devices. I began with the functionality of the app (e.g., fetching the data, displaying the data, nominating a movie, etc.), only adding some basic styling as needed in the beginning. As I continued to get more of the functionality working, I moved more and more to the layout and the styling. As I completed the functionality, I focused more on the styles and details of the design, including working on making it responsive across various screen sizes, which I achieved by using Flexbox, media queries, and the Responsively App.
+This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests.
 
 ## Screenshots
 
