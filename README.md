@@ -2,7 +2,7 @@
 
 ![Screenshot 01](screenshots/banner.png "The Twilight Zone API")
 
-[![Watch the video](https://www.screencast.com/t/w7QxTOaF)](https://www.screencast.com/t/w7QxTOaF)
+[![Watch the video](https://www.screencast.com/t/w7QxTOaF/screenshots/twilightzone-screenshot02.png)](https://www.screencast.com/t/w7QxTOaF)
 
 ## Description
 
