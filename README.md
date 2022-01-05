@@ -62,11 +62,11 @@ module.exports = () => ({
 
 This made it possible to serve and thus, deploy, each of these endpoints separately, which in the end resulted in a set of 6 common resources: `/episodes`, `/season1`, `/season2`, `/season3`, `/season4`, `/season5`, and `/season6`. At this point, the initial JSON file was no longer needed, since all of the data was converted into `.js` files, as described. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints (see below).
 
-![Screenshot 04](screenshots/test-site.gif "Test Site")
+![Screenshot 05](screenshots/test-site.gif "Test Site")
 
 ### Site Development
 
-This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. To make the site responsive and mobile-friendly, Flexbox and media queries were used in conjunction with Responsively App. In addition, smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari). Finally, after Open Graph meta tags were added, the Facebook Sharing Debugger tool was used to scrape the site, so that when the site's URL is shared and posted (e.g., on Facebook), the created content (e.g., custom image and description) will be shown.
+This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. To make the site responsive and mobile-friendly, Flexbox and media queries were used in conjunction with Responsively App. In addition, smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari). Finally, after Open Graph meta tags were added, the Facebook Sharing Debugger tool was used to scrape the site, so that when the site's URL is shared and posted (e.g., on Facebook), its content will be shown (see last screenshot below).
 
 #### useWindowDimensions Hook
 
@@ -146,5 +146,7 @@ As you can see in the code below, I created a `div` with an ID of `docs2` that s
 ![Screenshot 02](screenshots/twilightzone-screenshot02.png "Documentation Section")
 
 ![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
+
+![Screenshot 04](screenshots/twilightzone-screenshot04.png "Preview of Link when Shared on Social Media")
 
 [Back To Top](#Table-of-Contents)
