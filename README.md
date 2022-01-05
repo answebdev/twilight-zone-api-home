@@ -142,7 +142,7 @@ As you can see in the code below, I created a `div` with an `id` of `docs2` that
 
 ## Screenshots
 
-![Screenshot 01](screenshots/twilightzone-screenshot01.png "Home Page")
+![Screenshot 01](screenshots/twilightzone-screenshot01.png "Home Page Hero Section")
 
 ![Screenshot 02](screenshots/twilightzone-screenshot02.png "Documentation Section")
 
