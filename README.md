@@ -114,11 +114,9 @@ const { width } = useWindowDimensions();
 I then used `width` down below in the `Home.js` component. For my "Get Started" button, I used an anchor tag in the `href` so that when the "Get Started" button is clicked, the user would be navigated to the "Documentation" section down below. This is where the issue arose. As described above, when the user is navigated to the "Documentation" section of the page on smaller screen sizes (specifically, smaller than 768px in width), the "Documentation" header text sat halfway underneath the hero section. To address this, I used a ternary operator and the `width` constant. This can be interpreted as saying that when the width of the window is smaller than 768px, then navigate to the anchor link with the URL of `#docs2`; otherwise, navigate to the anchor link with the URL of `#docs`:
 
 ```
-<a
-  href={width < 768 ? '#docs2' : '#docs'}
->
-  Get Started
-</a>
+<div className={classes.Buttons}>
+  <a href={width < 768 ? '#docs2' : '#docs'}>Get Started</a>
+</div
 ```
 
 As you can see in the code below, I created a `div` with an `id` of `docs2` that sits slightly above the original `div` (with an `id` of `docs`). This is where the user will be navigated to when the screen size falls below a width of 768px. Some of the code was removed in this snippet in order to make it easier to see where the anchor links are placed. But with the complete code in place - which includes all of the content - the "Documentation" header text now sits nicely right below the hero section on smaller screen sizes.
