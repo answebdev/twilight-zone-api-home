@@ -72,6 +72,28 @@ This made it possible to serve and thus, deploy, each of these endpoints separat
 
 This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. To make the site responsive and mobile-friendly, Flexbox and media queries were used in conjunction with Responsively App. In addition, smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari). Finally, after Open Graph meta tags were added, the Facebook Sharing Debugger tool was used to scrape the site so that when the site's URL is posted and shared (e.g., on Facebook), its content will be shown (see last two screenshots below).
 
+#### Removing the Anchor Link ID Tags and Hashes from the URL
+
+The site's home page has two buttons in the hero section: "Get Started" and "Resources", and they both navigate the user to different sections of the same page. "Get Started" navigates a user to the Documents section of the page, while "Resources" navigates a user to the Resources section of the page. As they are anchor links used to navigate to a different section of the same page, the sections are given the URLs `#docs` and `#resources`, respectively. When the button is clicked to navigate to each section, the hash and `id` will show in the URL (e.g., `thetwilightzoneapi.netlify.app/#docs`), which is something I did not want. To address this, I was able to remove the hash and anchor link `id` from the URL, based on a [solution](https://www.finsweet.com/hacks/15/ "Remove anchor link id tag and # on urls within the same page") I had come across, and adapting it to work in my own setting by creating my own component that I would then be able to use to achieve this. I first converted everything from the original jQuery into JavaScript. In order to select the anchor link buttons, I gave each of them a class of `hashed` in `Home.js`:
+
+```
+<div className={classes.Buttons}>
+  <a
+    href={'#docs'}
+    className={`${classes.GetStarted} ${'hashed'}`}
+  >
+    Get Started
+  </a>
+
+  <a
+    href={'#resources'}
+    className={`${classes.GetStarted} ${'hashed'}`}
+  >
+    Resources
+  </a>
+</div>
+```
+
 #### useWindowDimensions Hook
 
 To make the site responsive, I used a combination of Flexbox and media queries in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height on smaller screen sizes, an issue arose on smaller screen sizes where the "Documentation" header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook (kept in a separate `utils` folder) that I was able to import and use in the home page component (`Home.js`). I used the following hook to get the window dimensions (height and width):
