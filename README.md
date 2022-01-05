@@ -33,6 +33,8 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Responsively App
 * Facebook Developer Tools (Sharing Debugger)
 * Netlify
+* JSON Server (for API)
+* Heroku (for API)
 
 [Back To Top](#Table-of-Contents)
 
