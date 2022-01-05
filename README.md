@@ -126,6 +126,8 @@ export default handleHashUrl;
 
 Finally, to use this, I imported `handleHashUrl` in `Home.js` and called the function inside a `useEffect` so that it would be called on every render of the component. And this is what worked. And so now, when either of these buttons are clicked to navigate to another section of the page, the hash and anchor link `id` will no longer show in the URL (though you might see it briefly flash in the URL, because of the 5 milliseconds it was given before being removed).
 
+![Screenshot 06](screenshots/remove-hash.gif "Hash and Anchor Link ID Removed from URL")
+
 #### useWindowDimensions Hook
 
 To make the site responsive, I used a combination of Flexbox and media queries in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height on smaller screen sizes, an issue arose on smaller screen sizes where the "Documentation" header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook (kept in a separate `utils` folder) that I was able to import and use in the home page component (`Home.js`). I used the following hook to get the window dimensions (height and width):
