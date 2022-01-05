@@ -114,7 +114,6 @@ I then used `width` down below in the `Home.js` component. For my "Get Started" 
 ```
 <a
   href={width < 768 ? '#docs2' : '#docs'}
-  className={`${classes.GetStarted} ${'hashed'}`}
 >
   Get Started
 </a>
