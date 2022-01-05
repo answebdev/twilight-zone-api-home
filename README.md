@@ -151,6 +151,6 @@ As you can see in the code below, I created a `div` with an ID of `docs2` that s
 
 ![Screenshot 04](screenshots/twilightzone-screenshot04.png "Preview of Link when Shared on Social Media")
 
-<img src="screenshots/twilightzone-screenshot04.png" width="200" height="200">
+<img src="screenshots/twilightzone-screenshot04.png" width="50%" height="auto">
 
 [Back To Top](#Table-of-Contents)
