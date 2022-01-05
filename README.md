@@ -17,6 +17,8 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 ## Table of Contents
 * [Technologies Used](#Technologies-Used)
 * [Development](#Development)
+  - [API Development](#API-Development)
+  - [Site Development](#Site-Development)
 * [Screenshots](#Screenshots)
 
 ## Technologies Used
@@ -66,7 +68,7 @@ This made it possible to serve and thus, deploy, each of these endpoints separat
 
 ### Site Development
 
-This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. To make the site responsive and mobile-friendly, Flexbox and media queries were used in conjunction with Responsively App. In addition, smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari). Finally, after Open Graph meta tags were added, the Facebook Sharing Debugger tool was used to scrape the site, so that when the site's URL is shared and posted (e.g., on Facebook), its content will be shown (see last screenshot below).
+This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. To make the site responsive and mobile-friendly, Flexbox and media queries were used in conjunction with Responsively App. In addition, smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari). Finally, after Open Graph meta tags were added, the Facebook Sharing Debugger tool was used to scrape the site so that when the site's URL is posted and shared (e.g., on Facebook), its content will be shown (see last screenshot below).
 
 #### useWindowDimensions Hook
 
@@ -147,6 +149,6 @@ As you can see in the code below, I created a `div` with an ID of `docs2` that s
 
 ![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
 
-![Screenshot 04](screenshots/twilightzone-screenshot04.png "Preview of Link when Shared on Social Media")
+<img src="screenshots/twilightzone-screenshot04.png" title="Preview of Link when Shared on Social Media" width="50%" height="auto">
 
 [Back To Top](#Table-of-Contents)
