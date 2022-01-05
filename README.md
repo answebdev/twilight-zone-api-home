@@ -74,7 +74,7 @@ This site was created for the documentation of the custom-built Twilight Zone AP
 
 #### Removing the Anchor Link ID Tags and Hashes from the URL
 
-The site's home page has two buttons in the hero section: "Get Started" and "Resources", and they both navigate the user to different sections of the same page. "Get Started" navigates a user to the Documents section of the page, while "Resources" navigates a user to the Resources section of the page. As they are anchor links used to navigate to a different section of the same page, the sections are given the URLs `#docs` and `#resources`, respectively. When the button is clicked to navigate to each section, the hash and `id` will show in the URL (e.g., `thetwilightzoneapi.netlify.app/#docs`), which is something I did not want. To address this, I was able to remove the hash and anchor link `id` from the URL, based on a [solution](https://www.finsweet.com/hacks/15/ "Remove anchor link id tag and # on urls within the same page") I had come across, and adapting it to work in my own setting by creating my own component that I would then be able to use to achieve this. I first converted everything from the original jQuery into JavaScript. In order to select the anchor link buttons, I gave each of them a class of `hashed` in `Home.js`:
+The site's home page has two buttons in the hero section: "Get Started" and "Resources", and they both navigate the user to different sections of the same page. "Get Started" navigates a user to the Documents section of the page, while "Resources" navigates a user to the Resources section of the page. As they are anchor links used to navigate to a different section of the same page, the sections are given the URLs `#docs` and `#resources`, respectively. When the button is clicked to navigate to each section, the hash and `id` will show in the URL (e.g., `thetwilightzoneapi.netlify.app/#docs`), which is something I did not want. To address this, I was able to remove the hash and anchor link `id` from the URL, based on a [solution](https://www.finsweet.com/hacks/15/ "Remove anchor link id tag and # on urls within the same page") I had come across, and adapting it to work in my own setting by creating my own component that I would then be able to use to achieve this. I first converted everything from the original jQuery into JavaScript. In order to select the anchor link buttons, I gave each of them a class of `hashed` in `Home.js`. Clicking on each of these buttons will naviagate the user to the appropriate section of the page, each containing either the link URL of `#docs` or `#resources`, depending on which button was clicked.
 
 ```
 <div className={classes.Buttons}>
@@ -92,6 +92,12 @@ The site's home page has two buttons in the hero section: "Get Started" and "Res
     Resources
   </a>
 </div>
+```
+
+When one of these buttons are clicked, the user will be navigated to the appropriate section of the page. For example, clicking the "Get Started" button will navigate the user to the Documentation section with the link URL of `#docs`, which is the URL given to the "Get Started" button above in the code.
+
+```
+
 ```
 
 #### useWindowDimensions Hook
