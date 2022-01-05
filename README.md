@@ -17,7 +17,6 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 ## Table of Contents
 * [Technologies Used](#Technologies-Used)
 * [Development](#Development)
-* - [Paste Your Document In Here](#paste-your-document-in-here)
 * [Screenshots](#Screenshots)
 
 ## Technologies Used
