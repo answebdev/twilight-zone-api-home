@@ -66,11 +66,11 @@ This made it possible to serve and thus, deploy, each of these endpoints separat
 
 ### Site Development
 
-This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. Smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari).
+This site was created for the documentation of the custom-built Twilight Zone API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with. It was built with React and uses Prism for the syntax highlighting. To make the site responsive and mobile-friendly, Flexbox and media queries were used in conjunction with Responsively App. In addition, smoothscroll polyfill was used so that the smooth scroll behavior can be used in browsers that do not support smooth scrolling (e.g., Safari). Finally, Open Graph meta tags were added so that when the site's URL is shared and posted (e.g., on Facebook), the created custom image and text will be shown.
 
 #### useWindowDimensions Hook
 
-To make the site responsive, I used a combination of Flexbox and media queries, in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height on smaller screen sizes, an issue arose on smaller screen sizes, where the "Documentation" header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook (kept in a separate `utils` folder) that I was able to import and use in the home page component (`Home.js`). I used the following hook to get the window dimensions (height and width):
+To make the site responsive, I used a combination of Flexbox and media queries in conjunction with Responsively App. However, because I wanted the hero section of the home page to take up 100% of the viewport height on smaller screen sizes, an issue arose on smaller screen sizes, where the "Documentation" header text sat halfway underneath the hero section, which did not look good. To address this, I used a hook (kept in a separate `utils` folder) that I was able to import and use in the home page component (`Home.js`). I used the following hook to get the window dimensions (height and width):
 
 ```
 import { useState, useEffect } from 'react';
