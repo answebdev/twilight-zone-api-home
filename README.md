@@ -103,7 +103,7 @@ export default function useWindowDimensions() {
 }
 ```
 
-Next, I imported the hook into the home page component. For my purposes, I only needed the width:
+Next, I imported the hook into the home page component in order to use it. For my purposes, I only needed the width:
 
 ```
 const { width } = useWindowDimensions();
