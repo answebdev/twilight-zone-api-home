@@ -2,10 +2,6 @@
 
 ![Screenshot 01](screenshots/banner.png "The Twilight Zone API")
 
-<!-- copy and paste. Modify height and width if desired. -->
-<iframe class="embeddedObject shadow resizable" name="embedded_content" scrolling="no" frameborder="0" type="text/html" 
-        style="overflow:hidden;" src="https://www.screencast.com/users/britvaica/folders/Camtasia%20Studio/media/c0a7fb47-35e4-49b9-ba95-7bb066f53152/embed" height="916" width="1920" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 ## Description
 
 The Twilight Zone API allows you to make HTTP requests on the original Twilight Zone television series. This site was created for the documentation of this custom API and provides all of the information needed to start making HTTP requests, including a set of six common resources that the API comes with.
