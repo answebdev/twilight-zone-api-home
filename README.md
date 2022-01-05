@@ -38,7 +38,7 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 
 ## Development
 
-The development of The Twilight Zone API comes in two phase: API Development and the Site Development stage. In the first phase, the actual Twilight Zone API was built, deployed, and tested. In the second phase, the React site was created for the documentation of the API. Details of each phase are described below.
+The The Twilight Zone API was developed in two phase: API Development and Site Development. In the first phase, the actual Twilight Zone API was built, deployed, and tested. In the second phase, the React site was created for the documentation of the API. Details of each phase are described below.
 
 ### API Development
 
