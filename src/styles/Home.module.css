@@ -221,6 +221,10 @@ tr:nth-child(even) {
   .SectionsContainer {
     padding: 2em;
   }
+
+  .TableContainer {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
