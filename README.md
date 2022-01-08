@@ -124,7 +124,7 @@ const handleHashUrl = () => {
 export default handleHashUrl;
 ```
 
-Finally, to use this, I imported `handleHashUrl` in `Home.js` and called the function inside a `useEffect` so that it would be called on every render of the component. And this is what worked. And so now, when either of these buttons are clicked to navigate to another section of the page, the hash and anchor link `id` will no longer show in the URL (though you might see it briefly flash in the URL, because of the 5 milliseconds it was given before being removed).
+Finally, `handleHashUrl` was imported and used in `Home.js`, and this is what worked. And so now, when either of these buttons are clicked to navigate to another section of the page, the hash and anchor link `id` will no longer show in the URL (though you might see it briefly flash in the URL, because of the 5 milliseconds it was given before being removed).
 
 ![Screenshot 06](screenshots/remove-hash.gif "Hash and Anchor Link ID Removed from URL")
 
