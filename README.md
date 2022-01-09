@@ -66,7 +66,7 @@ module.exports = () => ({
 
 This made it possible to serve and thus, deploy, each of these endpoints separately, which in the end resulted in a set of 6 common resources: `/episodes`, `/season1`, `/season2`, `/season3`, `/season4`, `/season5`, and `/season6`. At this point, the initial JSON file was no longer needed, since all of the data was converted into `.js` files, as described above. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints by first fetching, and then displaying the data from the API in the browser:
 
-![Screenshot 05](screenshots/test-site.gif "Test Site")
+![Screenshot 07](screenshots/test-site.gif "Test Site")
 
 ### Site Development
 
@@ -126,7 +126,7 @@ export default handleHashUrl;
 
 Finally, `handleHashUrl` was imported and used in `Home.js`, and this is what worked. And so now, when either of these buttons are clicked to navigate to another section of the page, the hash and anchor link `id` will no longer show in the URL (though you might see it briefly flash in the URL, because of the 5 milliseconds it was given before being removed), which is the desired result.
 
-![Screenshot 06](screenshots/remove-hash.gif "Hash and Anchor Link ID Removed from URL")
+![Screenshot 08](screenshots/remove-hash.gif "Hash and Anchor Link ID Removed from URL")
 
 [Back To Top](#Table-of-Contents)
 
@@ -138,8 +138,10 @@ Finally, `handleHashUrl` was imported and used in `Home.js`, and this is what wo
 
 ![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
 
-<img src="screenshots/twilightzone-screenshot04.png" title="Preview of Link when Shared on Facebook" width="50%" height="auto">
+![Screenshot 04](screenshots/twilightzone-screenshot03.png "Error Page")
 
-<img src="screenshots/twilightzone-screenshot05.png" title="Preview of Link when Shared on LinkedIn" width="50%" height="auto">
+<img src="screenshots/twilightzone-screenshot05.png" title="Preview of Link when Shared on Facebook" width="50%" height="auto">
+
+<img src="screenshots/twilightzone-screenshot06.png" title="Preview of Link when Shared on LinkedIn" width="50%" height="auto">
 
 [Back To Top](#Table-of-Contents)
