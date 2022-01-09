@@ -138,7 +138,7 @@ Finally, `handleHashUrl` was imported and used in `Home.js`, and this is what wo
 
 ![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
 
-![Screenshot 04](screenshots/twilightzone-screenshot03.png "Error Page")
+![Screenshot 04](screenshots/twilightzone-screenshot04.png "Error Page")
 
 <img src="screenshots/twilightzone-screenshot05.png" title="Preview of Link when Shared on Facebook" width="50%" height="auto">
 
