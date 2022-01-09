@@ -134,9 +134,9 @@ Finally, `handleHashUrl` was imported and used in `Home.js`, and this is what wo
 
 ![Screenshot 01](screenshots/twilightzone-screenshot01.png "Home Page Hero Section")
 
-![Screenshot 02](screenshots/twilightzone-screenshot02.png "Documentation Section")
+![Screenshot 02](screenshots/twilightzone-screenshot02.png "Home Page Documentation Section")
 
-![Screenshot 03](screenshots/twilightzone-screenshot03.png "Resources Section")
+![Screenshot 03](screenshots/twilightzone-screenshot03.png "Home Page Resources Section")
 
 ![Screenshot 04](screenshots/twilightzone-screenshot04.png "Error Page")
 
