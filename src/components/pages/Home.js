@@ -104,10 +104,20 @@ const Home = ({ history }) => {
               </p>
               <br />
 
+              <h2 className={classes.Subheading}>Rate Limit</h2>
+              <p>
+                Although this API is free, there is a rate limit of 10,000
+                requests a day to prevent malicious activity. That means that if
+                you happen to reach that limit, you will receive a 429 status
+                code, after which you will be able to make requests again after
+                24 hours.
+              </p>
+              <br />
+
               <h2 className={classes.Subheading}>Base Url</h2>
               <p>
                 <pre>
-                  <code className='language-html'>{`https://the-twilight-zone-api.herokuapp.com/`}</code>
+                  <code className='language-html'>{`https://the-twilight-zone-api.vercel.app/`}</code>
                 </pre>
               </p>
               <br />
@@ -213,7 +223,7 @@ const Home = ({ history }) => {
               <p>
                 <pre>
                   <code className='language-javascript'>
-                    {`fetch('https://the-twilight-zone-api.herokuapp.com/episodes')
+                    {`fetch('https://the-twilight-zone-api.vercel.app/episodes')
   .then(response => response.json())
   .then(json => console.log(json))
 `}
@@ -230,7 +240,7 @@ const Home = ({ history }) => {
               <p>
                 <pre>
                   <code className='language-javascript'>
-                    {`fetch('https://the-twilight-zone-api.herokuapp.com/episodes/1')
+                    {`fetch('https://the-twilight-zone-api.vercel.app/episodes/1')
   .then(response => response.json())
   .then(json => console.log(json))
 `}
@@ -289,7 +299,7 @@ const Home = ({ history }) => {
               <p>
                 <pre>
                   <code className='language-javascript'>
-                    {`fetch('https://the-twilight-zone-api.herokuapp.com/season1')
+                    {`fetch('https://the-twilight-zone-api.vercel.app/season1')
   .then(response => response.json())
   .then(json => console.log(json))
 `}
@@ -309,7 +319,7 @@ const Home = ({ history }) => {
               <p>
                 <pre>
                   <code className='language-javascript'>
-                    {`fetch('https://the-twilight-zone-api.herokuapp.com/season2/39')
+                    {`fetch('https://the-twilight-zone-api.vercel.app/season2/39')
   .then(response => response.json())
   .then(json => console.log(json))
 `}
@@ -366,7 +376,7 @@ const Home = ({ history }) => {
                 <table className={classes.ResourceTable}>
                   <tr className={classes.ResourceTr}>
                     <td className={classes.ResourceTd}>
-                      <a href='https://the-twilight-zone-api.herokuapp.com/episodes'>
+                      <a href='https://the-twilight-zone-api.vercel.app/episodes'>
                         /episodes
                       </a>
                     </td>
@@ -374,7 +384,7 @@ const Home = ({ history }) => {
                   </tr>
                   <tr className={classes.ResourceTr}>
                     <td className={classes.ResourceTd}>
-                      <a href='https://the-twilight-zone-api.herokuapp.com/season1'>
+                      <a href='https://the-twilight-zone-api.vercel.app/season1'>
                         /season1
                       </a>
                     </td>
@@ -382,7 +392,7 @@ const Home = ({ history }) => {
                   </tr>
                   <tr className={classes.ResourceTr}>
                     <td className={classes.ResourceTd}>
-                      <a href='https://the-twilight-zone-api.herokuapp.com/season2'>
+                      <a href='https://the-twilight-zone-api.vercel.app/season2'>
                         /season2
                       </a>
                     </td>
@@ -390,7 +400,7 @@ const Home = ({ history }) => {
                   </tr>
                   <tr className={classes.ResourceTr}>
                     <td className={classes.ResourceTd}>
-                      <a href='https://the-twilight-zone-api.herokuapp.com/season3'>
+                      <a href='https://the-twilight-zone-api.vercel.app/season3'>
                         /season3
                       </a>
                     </td>
@@ -398,7 +408,7 @@ const Home = ({ history }) => {
                   </tr>
                   <tr className={classes.ResourceTr}>
                     <td className={classes.ResourceTd}>
-                      <a href='https://the-twilight-zone-api.herokuapp.com/season4'>
+                      <a href='https://the-twilight-zone-api.vercel.app/season4'>
                         /season4
                       </a>
                     </td>
@@ -406,7 +416,7 @@ const Home = ({ history }) => {
                   </tr>
                   <tr className={classes.ResourceTr}>
                     <td className={classes.ResourceTd}>
-                      <a href='https://the-twilight-zone-api.herokuapp.com/season5'>
+                      <a href='https://the-twilight-zone-api.vercel.app/season5'>
                         /season5
                       </a>
                     </td>
