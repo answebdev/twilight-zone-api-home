@@ -33,8 +33,10 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Responsively App
 * Facebook Developer Tools (Sharing Debugger)
 * Netlify
-* JSON Server (for API)
-* Heroku (for API)
+* Express Server (for API)
+* Cors (for API)
+* Express Rate Limit (for API)
+* Vercel (for API)
 
 [Back To Top](#Table-of-Contents)
 
@@ -44,27 +46,33 @@ The Twilight Zone API was developed in two phases: API Development and Site Deve
 
 ### API Development
 
-To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), a JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). A server was then created in order to serve the data from the JSON file and then deploy the data endpoint using Heroku. In order to create different endpoints for the API (create a different endpoint for each season and one for all the episodes), I created separate `.js` files for each of the endpoints and their data. (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.). All of these files were exported separately by their endpoint name and brought into a new `db.js` file (see code below), which in turn was brought in to use in the server (`server.js`) as a single file.
+To build the [API](https://github.com/answebdev/twilight-zone-api/ "The Twilight Zone API Documentation"), an Express server was created to serve the data and then deploy the data endpoints using Vercel. A JSON file was initially created for all of the data (all five seasons: episodes, air date, images, etc.). In order to create different endpoints for the API (a different endpoint for each season and one for all the episodes), I created separate `.js` files for each of the endpoints and their data (i.e., `episodes.js` contained the data for all of the episodes, `season1.js` contained all of the data for Season 1, etc.) and put them in a folder called `endpoints`. I then created separate routes for each of the endpoints, including dynamic routing in the cases of getting data by a particular `id`, for example (see example code below). These were then brought in and used in the server file (`index.js`). In addition, a `base.html` page with the ('/') endpoint was created for the base URL page containing the API's resources. A route was also created for this in the `routes` folder, and was also brought in to use in the server file (`index.js`).
 
 ```
-const episodes = require('./episodes');
-const season1 = require('./season1');
-const season2 = require('./season2');
-const season3 = require('./season3');
-const season4 = require('./season4');
-const season5 = require('./season5');
+const router = require('express').Router();
+const episodes = require('../endpoints/episodes');
 
-module.exports = () => ({
-  episodes,
-  season1,
-  season2,
-  season3,
-  season4,
-  season5,
+// Get all episodes
+router.get('/', async (req, res) => {
+  try {
+    res.json(episodes);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).send('Server error');
+  }
 });
+
+// Get by episode id
+router.get(`/:id`, (req, res) => {
+  let items = episodes;
+  let data = items.find((item) => item.id == req.params.id);
+  res.json(data);
+});
+
+module.exports = router;
 ```
 
-This made it possible to serve and thus, deploy, each of these endpoints separately, which in the end resulted in a set of 6 common resources: `/episodes`, `/season1`, `/season2`, `/season3`, `/season4`, `/season5`, and `/season6`. At this point, the initial JSON file was no longer needed, since all of the data was converted into `.js` files, as described above. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints by first fetching, and then displaying the data from the API in the browser:
+In addition, Express Rate Limit was used to set a rate limit of 10,000 requests. The rate limiting was tested using Postman, including using the Postman test runner to test the status of each request made and setting the iteration to 10001, one request over the limit, which at that point returned a status of 429, indicating that the rate limiting was working as expected. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints by first fetching, and then displaying the data from the API in the browser:
 
 ![Screenshot 07](screenshots/test-site.gif "Test Site")
 
