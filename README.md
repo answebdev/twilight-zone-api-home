@@ -72,7 +72,7 @@ router.get(`/:id`, (req, res) => {
 module.exports = router;
 ```
 
-In addition, Express Rate Limit was used to set a rate limit of 10,000 requests. The rate limiting was tested using Postman, including using the Postman test runner and setting the iteration to 10001, one request over the limit, which at that point returned a status of 429, indicating that the rate limiting was working as expected. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints by first fetching, and then displaying the data from the API in the browser:
+In addition, Express Rate Limit was used to set a rate limit of 10,000 requests. The rate limiting was tested using Postman, including using the Postman test runner to test the status of the requests and setting the iteration to 10001, one request over the limit, which at that point returned a status of 429, indicating that the rate limiting was working as expected. To test the endpoints, I used Postman and Paw Cloud, and also created a simple site in order to test each of the endpoints by first fetching, and then displaying the data from the API in the browser:
 
 ![Screenshot 07](screenshots/test-site.gif "Test Site")
 
