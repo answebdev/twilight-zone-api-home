@@ -36,6 +36,8 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Express (for API)
 * Cors (for API)
 * Express Rate Limit (for API)
+* Postman (for API)
+* Paw Cloud (for API)
 * Vercel (for API)
 
 [Back To Top](#Table-of-Contents)
