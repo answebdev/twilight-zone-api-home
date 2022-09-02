@@ -33,7 +33,7 @@ Please go to the API documentation here: [The Twilight Zone API Documentation](h
 * Responsively App
 * Facebook Developer Tools (Sharing Debugger)
 * Netlify
-* Express Server (for API)
+* Express (for API)
 * Cors (for API)
 * Express Rate Limit (for API)
 * Vercel (for API)
